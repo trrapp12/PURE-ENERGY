@@ -1,0 +1,32 @@
+h2 {
+  color: blue;
+}
+
+.awesome {
+  color:red;
+}
+
+#rockstar {
+  font-family: sans-serif;
+}
+
+.ninja {
+  border: 2px solid indigo;
+}
+
+p.awesome {
+  background-color: darkslateblue;
+}
+
+.selectors > p {
+  font-weight: bold
+}
+
+.selectors > buddha {
+  font-weight: bold;
+}
+/*note that this one will not work because it is not a direct descendant of div*/
+
+.selectors img {
+  border: 2px solid #cccccc
+}
