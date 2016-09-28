@@ -27,7 +27,7 @@ ul > li {
 }
 
 .row {
-  margin: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 0px;
   border; none;
 
 }
@@ -65,4 +65,9 @@ body {
   left: 0;
   position: absolute;
   z-index: -1;
+}
+
+#fullscreen {
+  width:100%;
+  height:auto;
 }
