@@ -1,0 +1,29 @@
+.photos {
+  width: 100%
+  height: auto;
+  margin: 5em, 5em, 5em, 5em;
+  padding: 20em, 20em, 20em, 20em;
+}
+
+.photos.medium {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+}
+
+ul > li {
+  text-align: center;
+}
+
+.row {
+
+}
