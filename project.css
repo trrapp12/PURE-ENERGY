@@ -13,16 +13,18 @@
 }
 
 p {
-
-  width: 700px;
+  font-size: 1.15rem;
+  width: 900px;
   text-align: justify;
 }
 
 ul {
+  font-size: 1.15em;
   text-align: center;
 }
 
 ul > li {
+  font-size: 1.15em;
   text-align: justify;
 }
 
