@@ -14,7 +14,7 @@
 
 p {
 
-  width: 680px;
+  width: 700px;
   text-align: justify;
 }
 
@@ -63,11 +63,27 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  position: absolute;
+
   z-index: -1;
 }
 
 #fullscreen {
   width:100%;
   height:auto;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color:transparent;
+}
+
+a:active {
+  color:green;
+}
+
+a:link {
+  color:blue;
 }
