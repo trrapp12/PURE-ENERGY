@@ -14,7 +14,6 @@
   /*padding: 20em, 20em, 20em, 20em;*/
 }
 
-
 .photos.medium {
   margin-left: auto;
   margin-right: auto;
@@ -33,11 +32,13 @@
 #banner {
   margin-left: -1em;
   padding-left: -1em;
-  width: 1920 px;
-  height: auto;
+  /*width: 1920 px;
+  height: auto;*/
   position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 5px;
 }
-
 
 p {
   font-size: 1.05rem;
@@ -136,4 +137,12 @@ a:link {
   color: white;
   padding: 1px;
   align-items: center;
+}
+
+.row {
+
+  width: 30%;
+  float: right;
+  position: relative;
+
 }
