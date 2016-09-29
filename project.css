@@ -19,6 +19,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  height: auto;
   position: relative;
 
 }
@@ -29,6 +30,15 @@
   position: fixed;
 }
 
+#banner {
+  margin-left: -1em;
+  padding-left: -1em;
+  width: 1920 px;
+  height: auto;
+  position: fixed;
+}
+
+
 p {
   font-size: 1.05rem;
   width: 900px;
@@ -38,15 +48,23 @@ p {
 ul {
   font-size: 1.05em;
   text-align: center;
+  z-index: 5;
 }
 
 ul > li {
   font-size: 1.05em;
   text-align: justify;
+  z-index: 5;
 }
 
-.row {
+nav > ul {
+  z-index: 5;
+  position: absolute;
+}
 
+nav > ul > li{
+  z-index: 5;
+  position: absolute;
 }
 
 .center {
