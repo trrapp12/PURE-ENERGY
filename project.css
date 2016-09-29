@@ -9,7 +9,6 @@ body{
 
 .photos {
 
-
   /*min-width: 1920 px;
   min-height: 100%;*/
 
@@ -41,18 +40,36 @@ nav {
   position: fixed;
 }
 
+ul {
+  font-size: 1.05em;
+}
+
+li {
+  display: inline-block;
+  float: left;
+  font-size: 1.05em;
+  text-decoration: none;
+}
+
+.nav-li {
+  color: white;
+  text-decoration: none;
+  margin: 1em 1em 1em 1em;
+  padding-bottom: 2px;
+  z-index: 5;
+  list-style: none;
+}
+
 .align-left {
   text-align: center;
+  float: left;
 }
 
 .align-right {
   text-align: center;
-}
-
-#one {
-  height: 100%;
-  width: 100%;
-  position: fixed;
+  float: right;
+  padding-right: 2px;
+  padding-bottom: 10px;
 }
 
 /*#banner {
@@ -83,28 +100,9 @@ p {
 }
 
 .row {
-
   width: 30%;
   float: right;
   position: relative;
-
-}
-
-ul {
-  font-size: 1.05em;
-  /*z-index: 5;*/
-}
-
-ul > li {
-  font-size: 1.05em;
-}
-
-.center {
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-
 }
 
 .center > h1, p {
@@ -141,4 +139,12 @@ a:active {
 
 a:link {
   color:blue;
+}
+
+.button {
+  border: 1em;
+  border-radius: .2em;
+  color: gray;
+  padding: 5em;
+  float: right;
 }
