@@ -96,7 +96,7 @@ p {
   background-color: #CDCDCD;
   color: white;
   padding: 1px;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .row {
