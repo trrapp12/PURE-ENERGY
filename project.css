@@ -1,43 +1,67 @@
 .photos {
+
+  min-width: 1920 px;
+  min-height: 100%;
+
   width: 100%;
   height: auto;
-  margin: 5em, 5em, 5em, 5em;
-  padding: 20em, 20em, 20em, 20em;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /*margin: 5em, 5em, 5em, 5em;*/
+  /*padding: 20em, 20em, 20em, 20em;*/
 }
+
 
 .photos.medium {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  position: relative;
 
 }
 
+#one {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
 p {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   width: 900px;
   text-align: justify;
 }
 
 ul {
-  font-size: 1.15em;
+  font-size: 1.05em;
   text-align: center;
 }
 
 ul > li {
-  font-size: 1.15em;
+  font-size: 1.05em;
   text-align: justify;
 }
 
 .row {
-  margin: 20px 20px 20px 0px;
-  border; none;
 
 }
 
 .center {
   display:block;
-  margin:auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 75%;
+
+}
+
+.center > h1, p {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 
 }
 
@@ -53,9 +77,6 @@ h3 {
   text-align: justify;
 }
 
-.background-image {
-
-}
 
 body {
   content:"";
@@ -69,10 +90,10 @@ body {
   z-index: -1;
 }
 
-#fullscreen {
+/*#fullscreen {
   width:100%;
   height:auto;
-}
+}*/
 
 a:hover {
   text-decoration: none;
@@ -88,4 +109,13 @@ a:active {
 
 a:link {
   color:blue;
+}
+
+.footer {
+  font-size: 20px;
+  font-style: italic;
+  background-color: #CDCDCD;
+  color: white;
+  padding: 1px;
+  align-items: center;
 }
