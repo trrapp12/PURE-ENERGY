@@ -41,16 +41,20 @@ nav {
 }
 
 ul {
-  font-size: 1.05em;
+  font-size: 1.0em;
 }
 
 li {
   display: inline-block;
   float: left;
-  font-size: 1.05em;
+  font-size: 1.0em;
   text-decoration: none;
 }
 
+.lower-ul {
+  margin-bottom: -1em, 0, 1em, 0;
+  padding: 10px;
+}
 .nav-li {
   color: white;
   text-decoration: none;
@@ -87,6 +91,7 @@ p {
   font-size: 1.05rem;
   width: 900px;
   text-align: justify;
+  margin-bottom: 0px;
 }
 
 
@@ -103,13 +108,13 @@ p {
   width: 30%;
   float: right;
   position: relative;
+  min-height: 600px;
+  margin-left: 1em;
 }
 
 .center > h1, p {
   display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+  width: 90%;
 
 }
 
@@ -123,6 +128,7 @@ h1 {
 
 h3 {
   text-align: justify;
+  margin-top: 0px;
 }
 
 a:hover {
