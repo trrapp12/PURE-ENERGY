@@ -42,6 +42,9 @@ nav {
 
 ul {
   font-size: 1.0em;
+  font-weight: bold;
+  font-family: Raleway, sans-serif;
+  margin: 0;
 }
 
 li {
@@ -49,6 +52,9 @@ li {
   float: left;
   font-size: 1.0em;
   text-decoration: none;
+  font-weight: bold;
+  font-family: Raleway,sans-serif;
+
 }
 
 .lower-ul {
@@ -88,8 +94,9 @@ li {
 }*/
 
 p {
+  font-family: Raleway, serif;
   font-size: 1.05rem;
-  width: 900px;
+  /*width: 900px;*/
   text-align: justify;
   margin-bottom: 0px;
 }
@@ -100,7 +107,7 @@ p {
   font-style: italic;
   background-color: #CDCDCD;
   color: white;
-  padding: 1px;
+  padding: 20px;
 
 }
 
@@ -151,10 +158,14 @@ a:link {
   border: 1em;
   border-radius: .2em;
   color: gray;
-  padding: 5em;
   float: right;
 }
 
 .clear {
   clear: both;
+}
+
+#right-border {
+  padding:0;
+  margin-top: 16px;
 }
