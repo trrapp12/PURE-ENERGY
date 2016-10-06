@@ -134,16 +134,28 @@ p {
 
 }
 
-#footer > p {
+#footer > div > p {
   letter-spacing: .3em;
   text-align: center;
   width: 50%;
+  margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
-  height: 12em;
+  height: 2em;
   font-size: 1.5em;
   font-family: 'Raleway', sans-serif;
   color: white;
+}
+
+
+.svg_div {
+  text-align: center;
+  align-content: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  height: 400px;
 }
 
 .row {
@@ -152,6 +164,7 @@ p {
   position: relative;
   min-height: 600px;
   margin-left: 1em;
+
 }
 
 .center > h1, p {
@@ -209,4 +222,14 @@ a:link {
 
 .clear {
   clear: both;
+}
+
+.title {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height:10em;
+  top: 200px;
+  position: relative;
+  z-index: 1;
 }
