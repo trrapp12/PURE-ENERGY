@@ -42,10 +42,21 @@ body{
 }
 
 nav {
+  top: 0;
   width: 100%;
   height: 60px;
-  background-color: black;
+  background-color: gray;
   position: fixed;
+  z-index: 100;
+}
+
+.second-nav {
+  top:40px;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  height: 60px;
+  z-index: -10;
 }
 
 ul {
@@ -69,10 +80,11 @@ li {
   margin-bottom: -1em, 0, 1em, 0;
   padding: 10px;
 }
+
 .nav-li {
   color: white;
   text-decoration: none;
-  margin: 1em 1em 1em 1em;
+  margin: 1.25em 1.25em 1.25em 1.25em;
   padding-bottom: 2px;
   z-index: 5;
   list-style: none;
@@ -86,8 +98,8 @@ li {
 .align-right {
   text-align: center;
   float: right;
-  padding-right: 2px;
-  padding-bottom: 10px;
+  padding-right: 2.5em;
+  padding-bottom: 1em;
 }
 
 /*#banner {
@@ -137,6 +149,8 @@ p {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  top: 100px;
+  position: relative;
 }
 
 h1 {
@@ -160,8 +174,16 @@ a:visited {
   color:transparent;
 }
 
-a:active {
-  color:green;
+a.example {
+    color: black;
+    -webkit-transition: color 100ms ease-out 1s;
+    -moz-transition: color 100ms ease-out 1s;
+    -o-transition: color 100ms ease-out 1s;
+    transition: color 100ms ease-out 1s;
+}
+
+a.example:hover {
+  color: #CCCCCC;
 }
 
 a:link {
@@ -177,9 +199,4 @@ a:link {
 
 .clear {
   clear: both;
-}
-
-#right-border {
-  padding:0;
-  margin-top: 16px;
 }
