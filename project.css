@@ -242,3 +242,8 @@ a:link {
   position: relative;
   top: 800px;
 }
+
+#li-body {
+  float: none;
+  display: block;
+}
