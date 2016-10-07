@@ -196,7 +196,7 @@ h3 {
 
 a.example {
     text-decoration: none;
-    color: black;
+    color: white;
     -webkit-transition: color 500ms ease-out 10ms;
     -moz-transition: color 500ms ease-out 10ms;
     -o-transition: color 500ms ease-out 10ms;
@@ -205,7 +205,7 @@ a.example {
 
 a.example:hover {
   text-decoration: none;
-  color: #CCCCCC;
+  color: black;
 }
 
 a:link {
@@ -241,4 +241,10 @@ a:link {
   padding: 0;
   position: relative;
   top: 55em;
+}
+
+.extra-heigth {
+  height: 500px;
+  width: 100%;
+  display: block;
 }
