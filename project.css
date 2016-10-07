@@ -240,10 +240,5 @@ a:link {
   margin: 0;
   padding: 0;
   position: relative;
-  top: 800px;
-}
-
-#li-body {
-  float: none;
-  display: block;
+  top: 55em;
 }
