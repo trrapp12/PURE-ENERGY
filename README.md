@@ -16,7 +16,7 @@
 
 - [x] Include imported css.
 
-- Apply styles based on the following selectors and selector combinations:
+Apply styles based on the following selectors and selector combinations:
 ---
 
 - [x] element
