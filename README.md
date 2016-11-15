@@ -16,7 +16,7 @@
 
 - [x] Include imported css.
 
-Apply styles based on the following selectors and selector combinations:
+#####Apply styles based on the following selectors and selector combinations:
 ---
 
 - [x] element
@@ -26,7 +26,7 @@ Apply styles based on the following selectors and selector combinations:
 - [x] distinct nested element and class combination (i.e. if applied to element _or_ class _alone_ then additional nodes would be also be styled;  e.g. `p a`)
 - [x] shared styles (e.g. `p, a`)
 
-Add styling including at least one instance for each of these **properties**:
+#####Add styling including at least one instance for each of these **properties**:
 ---
 
 - [x] width
@@ -43,7 +43,7 @@ Add styling including at least one instance for each of these **properties**:
 - [x] text-align
 - [x] font-weight
 
-Use the following measurements at least once:
+#####Use the following measurements at least once:
 ---
 
 - [x] px
@@ -51,7 +51,7 @@ Use the following measurements at least once:
 - [x] em
 - [x] Modify each of the four different anchor states
 
-Make
+#####Make
 ---
 
 - [x] small and frequent git commits
