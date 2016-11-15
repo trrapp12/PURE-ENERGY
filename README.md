@@ -11,22 +11,58 @@
 <br/>
 <br/>
 
-###Rules of the Game:
----
-
-1. The app starts by choosing a random word
-2. The player can guess a single letter at a time
-3. The player has a fixed number of turns in which to guess all of the letters in the word
-4. The app should indicate when the player has won or lost
-
 ###This project demonstrates the following:
 ---
+- [ ] Include css in each of the three possible ways: imported, style element, embedded.
+- Apply styles based on the following selectors and selector combinations:
+- [ ] element
+- [ ] class
+- [ ] id
+- [ ] distinct nested element and class combination (i.e. if applied to element
+- [ ] distinct nested element and class combination (i.e. if applied to element _or_ class _alone_ then additional nodes would be also be styled;  e.g. `p a`)
+- [ ] shared styles (e.g. `p, a`)
+- Add styling including at least one instance for each of these **properties**:
+- [x] width
+- [ ] height
+- [ ] display
+- [ ] margin
+- [ ] padding
+- [ ] border
+- [ ] border-radius
+- [ ] background-color
+- [ ] background-image
+- [ ] color
+- [ ] font-size
+- [ ] font-style
+- [ ] text-align
+- [ ] font-weight
+- [ ] text-decoration
+- Use the following measurements at least once:
+- [ ] px
+- [ ] %
+- [ ] rem
+- [ ] em
+- [ ] Modify each of the four different anchor states
+- Make
+- [ ] small and frequent git commits
+- [ ] with messages following the basic AngularJS Git Commit Msg Convention style (per [Git Commit Messages](https://karma-runner.github.io/1.0/dev/git-commit-msg.html))
+- [ ] Ensure you've set the GitHub pages to use your "master branch".
 
-- [x] Create a HTML and JavaScript calculator.
-- [ ] perform math on two single digit integers.
-- [x] a button with the equals sign.
-- [x] buttons for numbers 0-9.
-- [x] buttons for each of the 4 basic math operators and remainder/modulo (+, -, /, *, and %)
+****
+
+_**Skilled Sorcerers && Wise Wizards**_
+
+- [ ] Use `data-[prefix]` with `attr(data-[prefix])` function
+- [ ] Use a background gradiant
+- [ ] Add and style a table with appropriate content (i.e. tabular data)
+
+****
+
+_**EVERYONE**_
+
+- [ ] Ensure you submit both the GitHub repo url (e.g. https://github.com/[username]-tiy/wk-01-alpha) as your "Assignment URL" _and_ the GitHub pages url (e.g. https://[username]-tiy.github.io/wk-01-alpha) in the notes area.
+
+
 
 <br/>
 <br/>
