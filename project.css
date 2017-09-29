@@ -3,7 +3,7 @@ body{
   padding: 70px 0px 0px 0px;
   border: 0px;
   background-image:url("images/45-degree-fabric-light.png");
-  opacity: 80%;
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -81,19 +81,30 @@ li {
 }
 
 .lower-ul {
-  margin-bottom: -1em, 0, 1em, 0;
   padding: 10px;
 }
 
 .nav-li {
-  color: white;
-  text-decoration: none;
-  margin: 2.5em 2.5em 2.5em 2.5em;
-  padding-bottom: 2px;
-  z-index: 5;
-  list-style: none;
-}
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    margin: 2.5em 2.5em 2.5em 2.5em;
+    padding-bottom: 2px;
+    z-index: 5;
+    list-style: none;
+  }
 
+ @media screen and (max-width: 768px) {
+
+    .nav-li {
+      color: white;
+      text-decoration: none;
+      margin: 1.5em 1.5em 1.5em 1.5em;
+      padding-bottom: 2px;
+      z-index: 5;
+      list-style: none;
+    }
+}
 .align-left {
   text-align: center;
   float: left;
@@ -209,7 +220,7 @@ a.example:hover {
 }
 
 a:link {
-  color:blue;
+  color: white;
   text-decoration: none;
 }
 
