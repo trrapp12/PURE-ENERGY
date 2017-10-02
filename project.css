@@ -7,8 +7,46 @@ body{
   z-index: -1;
 }
 
-.photos {
+nav {
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: gray;
+  position: fixed;
+  z-index: 100;
+}
 
+ul {
+  font-size: 1.0em;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  float: left;
+  font-size: 1.0em;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+h1 {
+  font-size: 1.50rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:lighter;
+  color: #CDCDCD;
+
+}
+
+h3 {
+  text-align: justify;
+  margin-top: 0px;
+}
+
+.photos {
   /*min-width: 1920 px;
   min-height: 100%;
 
@@ -30,26 +68,6 @@ body{
   margin-bottom: 1em;
 }
 
-.photos.medium {
-  /*margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 1280px;
-  height: auto;
-  position: relative;*/
-
-
-}
-
-nav {
-  top: 0;
-  width: 100%;
-  height: 100px;
-  background-color: gray;
-  position: fixed;
-  z-index: 100;
-}
-
 .second-nav {
   top:100px;
   width: 100%;
@@ -63,21 +81,17 @@ nav {
   background: linear-gradient(gray, #F7F7F7); /* Standard syntax */
 }
 
-ul {
-  font-size: 1.0em;
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-  margin: 0;
+.photos.medium {
+  /*margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+  position: relative;*/
 }
 
-li {
-  display: inline-block;
-  float: left;
-  font-size: 1.0em;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-
+.container {
+  width: 100vw;
 }
 
 .lower-ul {
@@ -86,7 +100,6 @@ li {
 
 .nav-li {
     color: white;
-    background-color: blue;
     text-decoration: none;
     margin: 2.5em 2.5em 2.5em 2.5em;
     padding-bottom: 2px;
@@ -126,26 +139,7 @@ p {
 }
 
 
-#footer {
-  background-color: transparent;
-  width: 100%;
-  padding: 8em 0 0 0;
-  height: 15em;
 
-}
-
-#footer > div > p {
-  letter-spacing: .3em;
-  text-align: center;
-  width: 50%;
-  margin-bottom: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  height: 5em;
-  font-size: 1.5em;
-  font-family: 'Raleway', sans-serif;
-  color: white;
-}
 
 
 .svg_div {
@@ -179,19 +173,6 @@ p {
   margin-right: auto;
   top: 100px;
   position: relative;
-}
-
-h1 {
-  font-size: 1.50rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight:lighter;
-  color: #CDCDCD;
-
-}
-
-h3 {
-  text-align: justify;
-  margin-top: 0px;
 }
 
 a.example {
@@ -235,7 +216,7 @@ a:link {
 }
 
 .speed {
-  width: 100%;
+  width: 10%;
   height: auto;
   margin: 0;
   padding: 0;
@@ -259,4 +240,25 @@ a:link {
      z-index: 5;
      list-style: none;
    }
+}
+
+#footer {
+  background-color: transparent;
+  width: 100%;
+  padding: 8em 0 0 0;
+  height: 15em;
+
+}
+
+#footer > div > p {
+  letter-spacing: .3em;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5em;
+  font-size: 1.5em;
+  font-family: 'Raleway', sans-serif;
+  color: white;
 }
