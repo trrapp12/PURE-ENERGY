@@ -43,25 +43,13 @@ h3 {
 }
 
 .photos {
-  /*min-width: 1920 px;
-  min-height: 100%;
-
-  width: 100%;
-  height: auto;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  position: relative;
-  margin: 5em, 5em, 5em, 5em;
-  padding: 20em, 20em, 20em, 20em;*/
   float: left;
   width:  280px;
   height: 280px;
   background-position: 50% 50%;
   background-repeat:   no-repeat;
   background-size:     cover;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .second-nav {
@@ -75,15 +63,6 @@ h3 {
   background: -o-linear-gradient(gray, #F7F7F7);
   background: -moz-linear-gradient(gray, #F7F7F7);
   background: linear-gradient(gray, #F7F7F7); /* Standard syntax */
-}
-
-.photos.medium {
-  /*margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 1280px;
-  height: auto;
-  position: relative;*/
 }
 
 .container {
@@ -149,7 +128,7 @@ p {
   font-size: 1.05rem;
   /*width: 900px;*/
   text-align: justify;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 
 .svg_div {
@@ -166,13 +145,13 @@ p {
   width: 30%;
   float: right;
   position: relative;
-  min-height: 600px;
   margin-left: 1em;
 }
 
 .center > h1, p {
   display:block;
   width: 90%;
+  margin-bottom: 8px;
 }
 
 .center-whole {
@@ -249,6 +228,12 @@ a:link {
   color: white;
 }
 
+hr {
+  width: 90%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
 @media screen and (max-width: 804px) {
 
    .nav-li {
@@ -270,7 +255,7 @@ a:link {
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 }
 
@@ -282,7 +267,7 @@ a:link {
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
   #footer > div > p {
     letter-spacing: .3em;
@@ -302,7 +287,6 @@ a:link {
   .column {
     width: 80%;
     position: relative;
-    min-height: 600px;
     margin-left: auto;
     margin-right: auto;
     float: none;
@@ -322,6 +306,7 @@ a:link {
   .center > h1, p {
     display:block;
     width: 100%;
+    margin-bottom: 8px;
   }
   .center-whole {
     width: 100%;
@@ -344,6 +329,9 @@ a:link {
     font-family: 'Raleway', sans-serif;
     color: white;
     width: 100%;
+  }
+  .br-spacing {
+
   }
 
 }
