@@ -1,9 +1,7 @@
 body{
-  margin: 0px;
-  padding: 70px 0px 0px 0px;
-  border: 0px;
+  margin: 0;
+  border: 0;
   background-image:url("images/45-degree-fabric-light.png");
-  opacity: 0.8;
   z-index: -1;
 }
 
@@ -30,7 +28,6 @@ li {
   text-decoration: none;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
-
 }
 
 h1 {
@@ -38,7 +35,6 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight:lighter;
   color: #CDCDCD;
-
 }
 
 h3 {
@@ -91,7 +87,25 @@ h3 {
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.speed {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 55em;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 0;
 }
 
 .lower-ul {
@@ -138,10 +152,6 @@ p {
   margin-bottom: 0px;
 }
 
-
-
-
-
 .svg_div {
   text-align: center;
   align-content: center;
@@ -158,13 +168,11 @@ p {
   position: relative;
   min-height: 600px;
   margin-left: 1em;
-
 }
 
 .center > h1, p {
   display:block;
   width: 90%;
-
 }
 
 .center-whole {
@@ -215,15 +223,6 @@ a:link {
   z-index: 1;
 }
 
-.speed {
-  width: 10%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: 55em;
-}
-
 .extra-heigth {
   height: 500px;
   width: 100%;
@@ -247,7 +246,6 @@ a:link {
   width: 100%;
   padding: 8em 0 0 0;
   height: 15em;
-
 }
 
 #footer > div > p {
