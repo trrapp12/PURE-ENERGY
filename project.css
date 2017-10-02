@@ -94,17 +94,6 @@ li {
     list-style: none;
   }
 
- @media screen and (max-width: 768px) {
-
-    .nav-li {
-      color: white;
-      text-decoration: none;
-      margin: 1.5em 1.5em 1.5em 1.5em;
-      padding-bottom: 2px;
-      z-index: 5;
-      list-style: none;
-    }
-}
 .align-left {
   text-align: center;
   float: left;
@@ -258,4 +247,16 @@ a:link {
   height: 500px;
   width: 100%;
   display: block;
+}
+
+@media screen and (max-width: 804px) {
+
+   .nav-li {
+     color: white;
+     text-decoration: none;
+     margin: 1.5em 1.5em 1.5em 1.5em;
+     padding-bottom: 2px;
+     z-index: 5;
+     list-style: none;
+   }
 }
