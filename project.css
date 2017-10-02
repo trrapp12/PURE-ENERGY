@@ -162,7 +162,7 @@ p {
   height: 400px;
 }
 
-.row {
+.column {
   width: 30%;
   float: right;
   position: relative;
@@ -239,6 +239,71 @@ a:link {
      z-index: 5;
      list-style: none;
    }
+
+}
+
+@media screen and (min-width: 950px) and (max-width: 1055px) {
+  .photos {
+    float: left;
+    width:  250px;
+    height: 250px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 780px) and (max-width: 950px) {
+  .photos {
+    float: left;
+    width:  200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .column {
+    width: 80%;
+    position: relative;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+  .photos {
+    display: none;
+  }
+
+  .row {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  .center {
+    display: relative;
+    width: 100%;
+  }
+
+  .center > h1, p {
+    display:block;
+    width: 100%;
+  }
+
+  .center-whole {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    position: relative;
+  }
+  h3 {
+    margin-top: 20px;
+  }
 }
 
 #footer {
