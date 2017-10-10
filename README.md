@@ -15,6 +15,7 @@
 ---
 
 - [x] Include imported css.
+- [x] Incorporating media queries at break points to create a responsive design across desktop, tablet, and mobile platforms.
 
 ##### Apply styles based on the following selectors and selector combinations:
 ---
