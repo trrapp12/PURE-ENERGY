@@ -98,17 +98,19 @@ h3 {
 }
 
 .changetop {
-  -webkit-transform: rotate(-45deg) translate(-200px, 6px);
-  transform: rotate(-45deg); translate(-200px, 6px)
-}
+  -webkit-transform: rotate(-45deg) translate(4px, 5px) ;
+    transform: rotate(-45deg) translate(4px, 5px) ;
+    width: 20px;
+  }
 
 .changemiddle {
   opacity: 0;
 }
 
 .changebottom {
-  -webkit-transform: rotate(45deg) translate(-9px, 6px);
-  transform: rotate(45deg) translate (-9px, 6px)
+  -webkit-transform: rotate(45deg) translate(-14px, -5px);
+  transform: rotate(45deg) translate (-13px, -7px) ;
+  width: 20px;
 }
 
 .lower-ul {
