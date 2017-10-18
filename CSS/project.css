@@ -57,7 +57,7 @@ h3 {
   top:100px;
   width: 100%;
   position: fixed;
-  height: 400px;
+  height: 900px;
   z-index: -1;
   background: gray;
   background: -webkit-linear-gradient(gray, #F7F7F7);
@@ -86,31 +86,6 @@ h3 {
   height: auto;
   margin: 0;
   border: 0;
-}
-
-.hamburger {
-  width: 30px;
-  height: .125em;
-  background-color: white;
-  margin: 5px 2.5em 5px 2.5em;
-  z-index: 5;
-  transition: .4s;
-}
-
-.changetop {
-  -webkit-transform: rotate(-45deg) translate(4px, 5px) ;
-    transform: rotate(-45deg) translate(4px, 5px) ;
-    width: 20px;
-  }
-
-.changemiddle {
-  opacity: 0;
-}
-
-.changebottom {
-  -webkit-transform: rotate(45deg) translate(-14px, -5px);
-  transform: rotate(45deg) translate (-13px, -7px) ;
-  width: 20px;
 }
 
 .lower-ul {
@@ -147,6 +122,8 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   max-height: 5px;
+
+  
 }*/
 
 p {
@@ -260,8 +237,7 @@ hr {
   margin-right: auto;
 }
 
-/*at less than 1000px bring the margins down on the .nav-li so they still fit on the same line*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 804px) {
 
    .nav-li {
      color: white;
@@ -273,49 +249,6 @@ hr {
    }
 
 }
-
-/*below 812 px hide the nav-li items except for the hamburger menu*/
-@media screen and (max-width: 812px) {
-
-   .nav-li {
-     color: white;
-     text-decoration: none;
-     margin: 1.0em 1.5em 1.0em 1.5em;
-     padding-bottom: 2px;
-     z-index: 5;
-     list-style: none;
-   }
-
-   nav {
-     max-height: 50px;
-   }
-
-   .second-nav {
-     top: 50px;
-     width: 100%;
-     position: fixed;
-     height: 400px;
-     z-index: -1;
-     background: gray;
-     background: -webkit-linear-gradient(gray, #F7F7F7);
-     background: -o-linear-gradient(gray, #F7F7F7);
-     background: -moz-linear-gradient(gray, #F7F7F7);
-     background: linear-gradient(gray, #F7F7F7);
-   }
-
-
-   #nav-li-hide {
-     color: white;
-     text-decoration: none;
-     margin: 1.0em 1.5em 1.0em 1.5em;
-     padding-bottom: 2px;
-     z-index: 5;
-     list-style: none;
-     display: none
-   }
-
-}
-
 
 @media screen and (min-width: 950px) and (max-width: 1055px) {
   .photos {
@@ -411,4 +344,30 @@ hr {
 
   }
 
+}
+
+@media screen and (min-width: 1055px) {
+  .center > h1, p {
+      display: block;
+      width: 71%;
+      margin-bottom: 8px;
+  }
+  hr {
+    width: 71%;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1055px) {
+  .center > h1, p {
+      display: block;
+      width: 71%;
+      margin-bottom: 8px;
+  }
+  hr {
+    width: 71%;
+    margin-left: 0;
+    margin-right: auto;
+  }
 }
