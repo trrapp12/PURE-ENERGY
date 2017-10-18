@@ -58,7 +58,7 @@ h3 {
   top:100px;
   width: 100%;
   position: fixed;
-  height: 956px;
+  height: 100%;
   z-index: -1;
   background: gray;
   background: -webkit-linear-gradient(gray, #F7F7F7);
@@ -295,7 +295,7 @@ hr {
      top: 50px;
      width: 100%;
      position: fixed;
-     height: 400px;
+     height: 100%;
      z-index: -1;
      background: gray;
      background: -webkit-linear-gradient(gray, #F7F7F7);
