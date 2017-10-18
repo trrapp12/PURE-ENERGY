@@ -434,6 +434,11 @@ hr {
     top: 525px !important;
   }
 
+  .extra-heigth {
+    height: 200px;
+    width: 100%;
+    display: block;
+
 }
 
 @media screen and (min-width: 1055px) {
