@@ -58,7 +58,7 @@ h3 {
   top:100px;
   width: 100%;
   position: fixed;
-  height: 400px;
+  height: 900px;
   z-index: -1;
   background: gray;
   background: -webkit-linear-gradient(gray, #F7F7F7);
@@ -412,4 +412,17 @@ hr {
 
   }
 
+}
+
+@media screen and (min-width: 1055px) {
+  .center > h1, p {
+      display: block;
+      width: 71%;
+      margin-bottom: 8px;
+  }
+  hr {
+    width: 71%;
+    margin-left: 0;
+    margin-right: auto;
+  }
 }
