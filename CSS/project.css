@@ -357,7 +357,11 @@ hr {
 }
 
 @media screen and (max-width: 780px) {
-  .align-left > ul, .align-left > ul > li {
+  .align-left > ul {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .align-left > ul > li {
     padding-left: 0;
     margin-left: 0;
   }
