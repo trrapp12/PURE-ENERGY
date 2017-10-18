@@ -20,7 +20,7 @@
     var menuBox = document.getElementById.("topNav")
     var status = menuBox.style.display
     if(menuBox.style.display == "block") {
-      menuBox.style.display == "None";
+      menuBox.style.display = "none";
       console.log(status)
     }
     else { menuBox.style.display == "block";
@@ -34,7 +34,7 @@
     <nav>
       <div class="align-left">
         <ul>
-          <li class="nav-li" id="topNav" onclick="rotateFunction(this); toggleNav()" style="display: block">
+          <li class="nav-li" id="topNav" onclick="rotateFunction(this); toggleNav();" style="display: block">
             <div class="hamburger change" id ="hamburger1"></div>
             <div class="hamburger change" id ="hamburger2"></div>
             <div class="hamburger change" id ="hamburger3"></div>
@@ -309,15 +309,15 @@ function topNav () {
     var toggleSwitch1 = document.getElementById("hamburger1");
     var toggleSwitch2 = document.getElementById("hamburger2");
     var toggleSwitch3 = document.getElementById("hamburger3");
-    console.log(toggleSwitch1)
-    console.log(toggleSwitch2)
-    console.log(toggleSwitch3)
+    console.log(toggleSwitch1);
+    console.log(toggleSwitch2);
+    console.log(toggleSwitch3);
     toggleSwitch1.classList.toggle("changetop");
     toggleSwitch2.classList.toggle("changemiddle");
     toggleSwitch3.classList.toggle("changebottom");
-    console.log(toggleSwitch1)
-    console.log(toggleSwitch2)
-    console.log(toggleSwitch3)
+    console.log(toggleSwitch1);
+    console.log(toggleSwitch2);
+    console.log(toggleSwitch3);
 
   }
 </script>
