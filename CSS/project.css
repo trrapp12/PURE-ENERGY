@@ -47,10 +47,12 @@ h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 21em;
-    margin: 0;
     text-align: center;
     color: white;
     padding: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
     src: local('Raleway'), local('Raleway-Regular'),
          url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
