@@ -223,7 +223,7 @@ p {
 
 .column {
   width: 30%;
-  float: right;
+  float: left;
   position: relative;
   margin-left: 1em;
 }
