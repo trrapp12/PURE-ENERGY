@@ -55,7 +55,7 @@ h3 {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 0;
+    line-height: 1;
     src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
     src: local('Raleway'), local('Raleway-Regular'),
          url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
