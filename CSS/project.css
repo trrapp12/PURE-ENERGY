@@ -5,12 +5,17 @@
   padding: 0;
   border: 0;
 }
-
+/*sets html height to 100% so body will fill the entire space*/
+html {
+    height: 100%;
+}
 /*element basics */
 body{
   margin: 0;
   border: 0;
   z-index: -1;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background: -o-linear-gradient(gray, #F7F7F7);
   background: -moz-linear-gradient(gray, #F7F7F7);
   background: linear-gradient(gray, #F7F7F7);
