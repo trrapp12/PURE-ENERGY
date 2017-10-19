@@ -1,3 +1,12 @@
+/*normalize margins and padding and border*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*element basics */
 body{
   margin: 0;
   border: 0;
@@ -63,6 +72,22 @@ h3 {
   margin-top: 0px;
 }
 
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.05rem;
+  /*width: 900px;*/
+  text-align: justify;
+  margin-bottom: 50px;
+  src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Regular'),
+         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+/*classes*/
 .title-font {
     font-family: 'Raleway';
     font-style: normal;
@@ -85,7 +110,6 @@ h3 {
          url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
-
 
 .photos {
   float: left;
@@ -142,6 +166,8 @@ h3 {
   transition: .4s;
 }
 
+/*hamburger menus */
+
 .changetop {
   -webkit-transform: rotate(-45deg) translate(4px, 5px) ;
     transform: rotate(-45deg) translate(4px, 5px) ;
@@ -157,6 +183,8 @@ h3 {
   transform: rotate(45deg) translate (-13px, -7px) ;
   width: 20px;
 }
+
+/*hamburger menus end*/
 
 .lower-ul {
   padding: 10px;
@@ -181,32 +209,6 @@ h3 {
   float: right;
   padding-right: 2.5em;
   padding-bottom: 1em;
-}
-
-/*#banner {
-  margin-left: -1em;
-  padding-left: -1em;
-  /*width: 1920 px;
-  height: auto;
-  position: fixed;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 5px;
-}*/
-
-p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.05rem;
-  /*width: 900px;*/
-  text-align: justify;
-  margin-bottom: 50px;
-  src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Raleway'), local('Raleway-Regular'),
-         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 
 .svg_div {
@@ -286,6 +288,8 @@ a:link {
   display: block;
 }
 
+
+/*footer */
 #footer {
   background-color: transparent;
   width: 100%;
@@ -313,109 +317,16 @@ a:link {
          url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 
+/*footer*/
+
 hr {
   width: 90%;
   margin-left: 0;
   margin-right: auto;
 }
 
-/*at less than 1000px bring the margins down on the .nav-li so they still fit on the same line*/
-@media screen and (max-width: 1000px) {
 
-   .nav-li {
-     color: white;
-     text-decoration: none;
-     margin: 1.5em 1.5em 1.5em 1.5em;
-     padding-bottom: 2px;
-     z-index: 5;
-     list-style: none;
-   }
-
-}
-
-/*below 812 px hide the nav-li items except for the hamburger menu*/
-@media screen and (max-width: 812px) {
-
-   .nav-li {
-     color: white;
-     text-decoration: none;
-     margin: 1.0em 1.5em 1.0em 1.5em;
-     padding-bottom: 2px;
-     z-index: 5;
-     list-style: none;
-   }
-
-   nav {
-     max-height: 50px;
-   }
-
-   .second-nav {
-     top: 50px;
-     width: 100%;
-     position: fixed;
-     height: 100%;
-     z-index: -1;
-     background: gray;
-     background: -webkit-linear-gradient(gray, #F7F7F7);
-     background: -o-linear-gradient(gray, #F7F7F7);
-     background: -moz-linear-gradient(gray, #F7F7F7);
-     background: linear-gradient(gray, #F7F7F7);
-   }
-
-
-   #nav-li-hide {
-     color: white;
-     text-decoration: none;
-     margin: 1.0em 1.5em 1.0em 1.5em;
-     padding-bottom: 2px;
-     z-index: 5;
-     list-style: none;
-     display: none
-   }
-
-}
-
-/*950px to 1055 px*/
-
-@media screen and (min-width: 950px) and (max-width: 1055px) {
-  .photos {
-    float: left;
-    width:  250px;
-    height: 250px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
-    margin-bottom: 2em;
-    margin-top: 4em;
-  }
-}
-
-/*780 px to 950 px*/
-
-@media screen and (min-width: 780px) and (max-width: 950px) {
-  .photos {
-    float: left;
-    width:  200px;
-    height: 200px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
-    margin-bottom: 2em;
-    margin-top: 4em;
-  }
-  #footer > div > p {
-    letter-spacing: .3em;
-    text-align: center;
-    margin-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    height: 5em;
-    font-size: 1.5em;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    width: 100%;
-  }
-}
+/*media queries.  They are generally organized from smallest screen width to largest*/
 
 /*below 780 px*/
 
@@ -530,6 +441,106 @@ hr {
     
   }
 }
+
+/*780 px to 950 px*/
+
+@media screen and (min-width: 780px) and (max-width: 950px) {
+  .photos {
+    float: left;
+    width:  200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin-bottom: 2em;
+    margin-top: 4em;
+  }
+  #footer > div > p {
+    letter-spacing: .3em;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5em;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    width: 100%;
+  }
+}
+
+/*below 812 px hide the nav-li items except for the hamburger menu*/
+@media screen and (max-width: 812px) {
+
+   .nav-li {
+     color: white;
+     text-decoration: none;
+     margin: 1.0em 1.5em 1.0em 1.5em;
+     padding-bottom: 2px;
+     z-index: 5;
+     list-style: none;
+   }
+
+   nav {
+     max-height: 50px;
+   }
+
+   .second-nav {
+     top: 50px;
+     width: 100%;
+     position: fixed;
+     height: 100%;
+     z-index: -1;
+     background: gray;
+     background: -webkit-linear-gradient(gray, #F7F7F7);
+     background: -o-linear-gradient(gray, #F7F7F7);
+     background: -moz-linear-gradient(gray, #F7F7F7);
+     background: linear-gradient(gray, #F7F7F7);
+   }
+
+
+   #nav-li-hide {
+     color: white;
+     text-decoration: none;
+     margin: 1.0em 1.5em 1.0em 1.5em;
+     padding-bottom: 2px;
+     z-index: 5;
+     list-style: none;
+     display: none
+   }
+
+}
+
+/*950px to 1055 px*/
+
+@media screen and (min-width: 950px) and (max-width: 1055px) {
+  .photos {
+    float: left;
+    width:  250px;
+    height: 250px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin-bottom: 2em;
+    margin-top: 4em;
+  }
+}
+
+
+/*at less than 1000px bring the margins down on the .nav-li so they still fit on the same line*/
+@media screen and (max-width: 1000px) {
+
+   .nav-li {
+     color: white;
+     text-decoration: none;
+     margin: 1.5em 1.5em 1.5em 1.5em;
+     padding-bottom: 2px;
+     z-index: 5;
+     list-style: none;
+   }
+
+}
+
 /*above 1055px*/
 @media screen and (min-width: 1055px) {
   .center > h1, p {
