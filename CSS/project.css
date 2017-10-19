@@ -14,11 +14,11 @@ body{
   margin: 0;
   border: 0;
   z-index: -1;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background: -o-linear-gradient(gray, #F7F7F7);
   background: -moz-linear-gradient(gray, #F7F7F7);
   background: linear-gradient(gray, #F7F7F7);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 nav {
