@@ -57,7 +57,7 @@ h3 {
 .second-nav {
   top:100px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   height: 100%;
   z-index: -1;
   background: gray;
