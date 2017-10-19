@@ -375,6 +375,7 @@ hr {
 
 }
 
+/*950px to 1055 px*/
 
 @media screen and (min-width: 950px) and (max-width: 1055px) {
   .photos {
@@ -388,6 +389,8 @@ hr {
     margin-top: 4em;
   }
 }
+
+/*780 px to 950 px*/
 
 @media screen and (min-width: 780px) and (max-width: 950px) {
   .photos {
@@ -413,6 +416,8 @@ hr {
     width: 100%;
   }
 }
+
+/*below 780 px*/
 
 @media screen and (max-width: 780px) {
   .align-left > ul {
@@ -525,7 +530,7 @@ hr {
     
   }
 }
-
+/*above 1055px*/
 @media screen and (min-width: 1055px) {
   .center > h1, p {
       display: block;
