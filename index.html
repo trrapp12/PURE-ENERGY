@@ -15,45 +15,14 @@
   <link rel="stylesheet" type="text/css" href="CSS/project.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <script>
-  function toggleNav() {
-    var menuBox = document.getElementById.("topNav")
-    var status = menuBox.style.display
-    if(menuBox.style.display == "block") {
-      menuBox.style.display = "none";
-      console.log(status)
-    }
-    else { menuBox.style.display == "block";
-      console.log(status)
-    }
-  }
-</script>
-<script>
-  function rotateFunction(x) {
-    // x.classList.toggle('change')
-    // console.log("toggled change")
-    var toggleSwitch1 = document.getElementById("hamburger1");
-    var toggleSwitch2 = document.getElementById("hamburger2");
-    var toggleSwitch3 = document.getElementById("hamburger3");
-    console.log(toggleSwitch1);
-    console.log(toggleSwitch2);
-    console.log(toggleSwitch3);
-    toggleSwitch1.classList.toggle("changetop");
-    toggleSwitch2.classList.toggle("changemiddle");
-    toggleSwitch3.classList.toggle("changebottom");
-    console.log(toggleSwitch1);
-    console.log(toggleSwitch2);
-    console.log(toggleSwitch3);
 
-  }
-</script>
 </head>
 <body>
   <div class="container">
     <nav>
       <div class="align-left">
-        <ul id="topNav" onclick=" toggleNav();">
-          <li class="nav-li" onclick="rotateFunction(this);" style="display: block">
+        <ul id="topNav" onclick="toggleNav();" style="display: block">
+          <li class="nav-li" onclick="rotateFunction(this);">
             <div class="hamburger change" id ="hamburger1"></div>
             <div class="hamburger change" id ="hamburger2"></div>
             <div class="hamburger change" id ="hamburger3"></div>
@@ -310,7 +279,40 @@
 </div>
 </div>
 </body>
+
+  <script>
+  function toggleNav() {
+    var menuBox = document.getElementById.("topNav")
+    var status = menuBox.style.display
+    if(menuBox.style.display == "block") {
+      menuBox.style.display = "none";
+      console.log(status)
+    }
+    else { menuBox.style.display == "block";
+      console.log(status)
+    }
+  }
+</script>
 <script>
+  function rotateFunction(x) {
+    // x.classList.toggle('change')
+    // console.log("toggled change")
+    var toggleSwitch1 = document.getElementById("hamburger1");
+    var toggleSwitch2 = document.getElementById("hamburger2");
+    var toggleSwitch3 = document.getElementById("hamburger3");
+    console.log(toggleSwitch1);
+    console.log(toggleSwitch2);
+    console.log(toggleSwitch3);
+    toggleSwitch1.classList.toggle("changetop");
+    toggleSwitch2.classList.toggle("changemiddle");
+    toggleSwitch3.classList.toggle("changebottom");
+    console.log(toggleSwitch1);
+    console.log(toggleSwitch2);
+    console.log(toggleSwitch3);
+
+  }
+</script>
+<!-- <script>
 function topNav () {
   const topNav = document.getElementById("topNav")
 
@@ -320,6 +322,6 @@ function topNav () {
     else {
       topNav.classname = "x"
     }
-}</script>
+}</script> -->
 
 </html>
