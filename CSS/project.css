@@ -223,13 +223,12 @@ p {
   color: white;
   height: 400px;
 }
-
 .column {
-  width: 30%;
-  float: left;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+    width: 30%;
+    float: left;
+    position: relative;
+    margin-left: 53px;
+    margin-right: auto;
 }
 
 .center > h1, p {
