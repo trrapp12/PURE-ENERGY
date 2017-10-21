@@ -131,7 +131,7 @@ p {
     margin-top: 4em;
 }
 
-.second-nav {
+.gradient {
   top:100px;
   width: 100%;
   position: absolute;
@@ -204,6 +204,45 @@ p {
     list-style: none;
   }
 
+/*hidden navbar*/
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.show {
+  display: block;
+}
+
+/*end dropdown*/
+
+
 .align-left {
   text-align: center;
   float: left;
@@ -233,6 +272,25 @@ p {
     margin-right: auto;
 }
 
+/*make photo zoom out*/
+/*.zoomClass {
+  -moz-transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  transform: scale(1.0);
+  -moz-transition: all 20s ease-in-out;
+  -webkit-transition: all 20s ease-in-out;
+  transition: all 20s ease-in-out;
+}
+
+.zoomClass:hover img {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+  -moz-transition: all 20s ease-in-out;
+  -webkit-transition: all 20s ease-in-out;
+  transition: all 20s ease-in-out;
+}
+*/
 .center > h1, p {
   display:block;
   width: 90%;
