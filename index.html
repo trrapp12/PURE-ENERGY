@@ -351,28 +351,24 @@
 </script>
 
 <script>
-    // document.getElementsByClassName("photos").addEventListener("mouseenter", mouseEnter);
-    // document.getElementsByClassName("photos").addEventListener("mouseleave", mouseLeave);
 
-    var x = document.getElementsByClassName("photos");
+    var x = document.querySelectorAll(".photos");
       for (var i = 0; i < x.length; i++) {
-        console.log(x)
-        var y = x.item(i);
-        console.log(y)
-        y.addEventListener("mouseenter", photoZoom)
-        y.addEventListener("mouseleave", photoReturn)
+        x[i].addEventListener("mouseenter", photoZoom)
+        x[i].addEventListener("mouseleave", photoReturn)
+
       }
 
     function photoZoom () {
       console.log("photoZoom")
-      y.style.transform = "scale(1.1)";
-      y.style.transition = "all 0.4s ease-in-out"
+      this.style.transform = "scale(1.1)";
+      this.style.transition = "all 0.4s ease-in-out"
     }
 
     function photoReturn () {
       console.log("photoReturn")
-      y.style.transform = "scale(1.0)";
-      y.style.transition = "all 0.4s ease-in-out"
+      this.style.transform = "scale(1.0)";
+      this.style.transition = "all 0.4s ease-in-out"
 
     }
 </script>
