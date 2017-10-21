@@ -91,13 +91,13 @@
       <p class="title-font">EnERGY</p>
     </div>
     <div class="speed zoomClass">
-        <!-- <div class="photophoto"></div> --> <img src="images/pexels-photo-2.jpg" alt="fast car" class="banner-image"  id="carZoom"/>
+        <div class="banner-image" id="carZoom"></div> <!-- <img src="images/pexels-photo-2.jpg" alt="fast car" class="banner-image"  id="carZoom"/> -->
     </div>
     <div class="center-whole" style="top:1000px">
       <div class="row">
         <div class="column">
-          <div class="" >
-            <img src="images/pexels-photo-158975.jpeg" alt="girl reaching for sky" class="photos"/>
+          <div class="photo-crop">
+            <img src="images/pexels-photo-158975.jpeg" alt="girl reaching for sky" class="photos medium"/>
           </div>
           <div class="center">
             <h1>Our Program</h1>
@@ -123,7 +123,7 @@
           </div>
         </div>
         <div class="column">
-          <div class="center">
+          <div class="center photo-crop">
             <img src="images/pexels-photo-58724.jpeg" alt="pic" class="photos medium"/>
           </div>
           <div class="center">
@@ -150,7 +150,7 @@
           </div>
         </div>
         <div class="column">
-          <div>
+          <div class="photo-crop">
             <img src="images/pexels-photo-115833.jpeg" alt="pic" class="photos medium"/>
           </div>
           <div class="center">
@@ -178,7 +178,7 @@
         </div>
         <div class="row">
           <div class="column">
-            <div>
+            <div class="photo-crop">
               <img src="images/pexels-photo-158967.jpeg" alt="pic" class="photos medium"/>
             </div>
             <div class="center">
@@ -205,7 +205,7 @@
             </div>
           </div>
           <div class="column">
-            <div class="">
+            <div class="photo-crop">
               <img src="images/sports-car-pkw-auto-vehicle-94272.jpeg" alt="pic" class="photos medium"/>
             </div>
             <div class="center">
@@ -233,7 +233,7 @@
             </div>
           </div>
           <div class="column">
-            <div class="">
+            <div class="photo-crop">
               <img src="images/traffic-car-vehicle-black.jpg" alt="pic" class="photos medium"/>
             </div>
             <div class="center">
@@ -349,6 +349,33 @@
 
   }
 </script>
+
+<script>
+    // document.getElementsByClassName("photos").addEventListener("mouseenter", mouseEnter);
+    // document.getElementsByClassName("photos").addEventListener("mouseleave", mouseLeave);
+
+    var x = document.getElementsByClassName("photos");
+      for (var i = 0; i < x.length; i++) {
+        console.log(x)
+        var y = x.item(i);
+        console.log(y)
+        y.addEventListener("mouseenter", photoZoom)
+        y.addEventListener("mouseleave", photoReturn)
+      }
+
+    function photoZoom () {
+      console.log("photoZoom")
+      y.style.transform = "scale(1.1)";
+      y.style.transition = "all 0.4s ease-in-out"
+    }
+
+    function photoReturn () {
+      console.log("photoReturn")
+      y.style.transform = "scale(1.0)";
+      y.style.transition = "all 0.4s ease-in-out"
+
+    }
+</script>
 <script>
   document.getElementById("carZoom").addEventListener("mouseenter", mouseEnter);
   document.getElementById("carZoom").addEventListener("mouseleave", mouseLeave);
@@ -364,18 +391,9 @@
 
   }
 
-  
-</script>
-<!-- <script>
-function topNav () {
-  const topNav = document.getElementById("topNav")
 
-  if topNav.classname === "x" {
-    topNav.classname = "x" += " responsive"
-  }
-    else {
-      topNav.classname = "x"
-    }
-}</script> -->
+</script>
+
+
 
 </html>
