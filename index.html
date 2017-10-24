@@ -97,7 +97,7 @@
       <div class="row">
         <div class="column">
           <div class="photo-crop">
-            <img src="images/pexels-photo-158975.jpeg" alt="girl reaching for sky" class="photos medium"/>
+            <img src="images/pexels-photo-158975.jpeg" alt="girl reaching for sky" class="photos medium" style="width: 100%; height: auto; overflow: hidden;"/>
           </div>
           <div class="center">
             <h1>Our Program</h1>
@@ -359,13 +359,13 @@
 
     function photoZoom () {
       console.log("photoZoom")
-      this.style.transform = "scale(1.1)";
+      this.style.transform = "scale(1.1, 1.1)";
       this.style.transition = "all 0.4s ease-in-out"
     }
 
     function photoReturn () {
       console.log("photoReturn")
-      this.style.transform = "scale(1.0)";
+      this.style.transform = "scale(1.0, 1.0)";
       this.style.transition = "all 0.4s ease-in-out"
 
     }

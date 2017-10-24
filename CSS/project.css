@@ -128,7 +128,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 2em;
-    margin-top: 4em;
+/*    margin-top: 4em;*/
 }
 
 .gradient {
@@ -247,10 +247,15 @@ p {
 
 /*end dropdown*/
 .photo-crop {
-  overflow: hidden;
+  background-color: pink;
   width: 350px;
   height: 350px;
-  background-position: center;
+  overflow: hidden;
+  z-index: 100;
+  position: relative;
+  border: 1px none black;
+/*  margin-top: 50px;*/
+
 }
 
 .align-left {
@@ -400,11 +405,11 @@ hr {
     margin-right: auto;
     float: none;
   }
-  .photos {
+/*  .photos {
     display: none;
     margin-top: 4em;
     margin-bottom: 2.5em;
-  }
+  }*/
   .row {
     display: inline-block;
     width: 100%;
@@ -509,7 +514,7 @@ hr {
     background-repeat:   no-repeat;
     background-size:     cover;
     margin-bottom: 2em;
-    margin-top: 4em;
+/*    margin-top: 4em;*/
   }
   #footer > div > p {
     letter-spacing: .3em;
@@ -574,7 +579,7 @@ hr {
     background-repeat:   no-repeat;
     background-size:     cover;
     margin-bottom: 2em;
-    margin-top: 4em;
+/*    margin-top: 4em;*/
   }
 }
 
@@ -613,7 +618,7 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 2em;
-    margin-top: 4em;
+/*    margin-top: 4em;*/
   }
 
 }
@@ -621,12 +626,12 @@ hr {
 @media screen and (min-width: 1462px) {
     .photos {
     float: left;
-    width: 350px;
-    height: 350px;
+    width: 360px;
+    height: 360px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 2em;
-    margin-top: 4em;
+/*    margin-top: 4em;*/
   }
 }
