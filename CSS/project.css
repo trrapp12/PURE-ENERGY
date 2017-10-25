@@ -151,16 +151,16 @@ p {
   margin: 0;
   padding: 0;
   position: relative;
-  top: 55em;
   overflow: hidden;
 }
 
 .banner-image {
   width: 100%;
   height: 600px;
+  top: 70em;
   margin: 0;
   border: 0;
-  background-image: url('../images/pexels-photo-2.jpg');
+  background-image: url('../images/aventador.jpg');
   background-attachment:fixed;
   background-size:cover;
   background-position:center;
@@ -247,15 +247,11 @@ p {
 
 /*end dropdown*/
 .photo-crop {
-  background-color: pink;
   width: 350px;
   height: 350px;
   overflow: hidden;
   z-index: 100;
   position: relative;
-  border: 1px none black;
-/*  margin-top: 50px;*/
-
 }
 
 .align-left {
@@ -468,7 +464,6 @@ hr {
     margin: 0;
     padding: 0;
     position: relative;
-    top: 70em;
     overflow: hidden;
   }
 
@@ -515,6 +510,9 @@ hr {
     background-size:     cover;
     margin-bottom: 2em;
 /*    margin-top: 4em;*/
+  }
+  .photo-crop {
+    margin-top: 4em;
   }
   #footer > div > p {
     letter-spacing: .3em;
@@ -581,6 +579,9 @@ hr {
     margin-bottom: 2em;
 /*    margin-top: 4em;*/
   }
+  .photo-crop {
+    margin-top: 4em;
+  }
 }
 
 
@@ -620,7 +621,9 @@ hr {
     margin-bottom: 2em;
 /*    margin-top: 4em;*/
   }
-
+  .photo-crop {
+    margin-top: 4em;
+  }
 }
 
 @media screen and (min-width: 1462px) {
@@ -633,5 +636,9 @@ hr {
     background-size: cover;
     margin-bottom: 2em;
 /*    margin-top: 4em;*/
+  }
+  .photo-crop {
+    margin-top: 4em;
+    margin-bottom: 2em;
   }
 }
