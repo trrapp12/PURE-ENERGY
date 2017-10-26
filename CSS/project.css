@@ -378,7 +378,7 @@ a:link {
 /*elements in the footer*/
 .wrapper {
   overflow: hidden;
-  width: 450px;
+  width: auto;
   height: 50px;
 }
 .wrapper a {
@@ -396,92 +396,102 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   width: 400px;
   display: inline-block;
   font-size: 15px;
-  height: 50px;
+  height: 20px;
   margin-left: 5px;
-  transform: translateX(-120px);
+  transform: translateX(-325px);
   -webkit-transition: all 1s ease;
+  color:white;
 }
 
 #hidden-span2helper {
-  width: 1200px;
+  width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
   transform: translateX(-150px);
   -webkit-transition: all 1s ease;
+  color: white;
 }
 #hidden-span3helper {
-  width: 1200px;
+  width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
   transform: translateX(-350px);
   -webkit-transition: all 1s ease;
+  color: white;
 }
 #hidden-span4helper {
-  width: 1200px;
+  width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
   transform: translateX(-350px);
   -webkit-transition: all 1s ease;
+  color: white;
 }
 #hidden-span5helper {
-  width: 1200px;
+  width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
   transform: translateX(-350px);
   -webkit-transition: all 1s ease;
+  color: white;
 }
 #hidden-span6helper {
-  width: 1200px;
+  width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
   transform: translateX(-350px);
   -webkit-transition: all 1s ease;
+  color: white;
 }
 #hidden-span7helper {
-  width: 1200px;
+  width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
   transform: translateX(-350px);
   -webkit-transition: all 1s ease;
+  color: white;
 }
 #hidden-span8helper {
-  width: 1200px;
+  width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
   transform: translateX(-350px);
   -webkit-transition: all 1s ease;
+  color: white;
 }
 #hidden-span9helper {
-  width: 1200px;
+  width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
   transform: translateX(-350px);
   -webkit-transition: all 1s ease;
+  color: white;
 }
 #hidden-span10helper {
-  width: 1200px;
+  width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
   transform: translateX(-350px);
   -webkit-transition: all 1s ease;
+  color: white;
 }
 
 /*introduces the syntax that will affect the spanhelpers*/
@@ -492,7 +502,8 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   height: 100px;
   font-size: 15px;
   transition:.2s 1s ease;
-  transform: translateX(120px);
+  transform: translateX(350px);
+  color: white;
 }
 #hidden-span2:hover ~ #hidden-span2helper {
   display: inline-block;
@@ -502,6 +513,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   background-color: pink;
   transition-duration: .5s;
   transform: translateX(20px);
+  color: white;
 }
 #hidden-span3:hover ~ #hidden-span3helper {
   display: inline-block;
@@ -511,6 +523,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   background-color: pink;
   transition-duration:all 1s ease;
   transform: translateX(30px);
+  color: white;
 }
 #hidden-span4:hover ~ #hidden-span4helper {
   display: inline-block;
@@ -520,6 +533,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   background-color: pink;
   transition-duration: .5s;
   transform: translateX(40px);
+  color: white;
 }
 #hidden-span5:hover ~ #hidden-span5helper {
   display: inline-block;
@@ -529,6 +543,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   background-color: pink;
   transition-duration: .5s;
   transform: translateX(50px);
+  color: white;
 }
 #hidden-span6:hover ~ #hidden-span6helper {
   display: inline-block;
@@ -538,6 +553,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   background-color: pink;
   transition-duration: .5s;
   transform: translateX(60px);
+  color: white;
 }
 #hidden-span7:hover ~ #hidden-span7helper {
   display: inline-block;
@@ -547,6 +563,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   background-color: pink;
   transition-duration: .5s;
   transform: translateX(80px);
+  color: white;
 }
 #hidden-span8:hover ~ #hidden-span8helper {
   display: inline-block;
@@ -556,6 +573,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   background-color: pink;
   transition-duration: .5s;
   transform: translateX(90px);
+  color: white;
 }
 #hidden-span9:hover ~ #hidden-span9helper {
   display: inline-block;
@@ -565,6 +583,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   background-color: pink;
   transition-duration: .5s;
   transform: translateX(100px);
+  color: white;
 }
 #hidden-span10:hover ~ #hidden-span10helper {
   display: inline-block;
@@ -574,6 +593,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   background-color: pink;
   transition-duration: .5s;
   transform: translateX(110px);
+  color: white;
 }
 /* end of spans and span helpers */
 
@@ -828,23 +848,24 @@ hr {
   }
   .photo-crop {
     margin-top: 4em;
+    margin-bottom: 2em;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    z-index: 100;
+    position: relative;
   }
-}
-
-@media screen and (min-width: 1462px) {
-    .photos {
+  .center > h1, p {
+    display: block;
+    width: 61%;
+    margin-bottom: 8px;
+  }
+  .column {
+    width: 29%;
     float: left;
-    width: 360px;
-    height: 360px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 2em;
-/*    margin-top: 4em;*/
-  }
-  .photo-crop {
-    margin-top: 4em;
-    margin-bottom: 2em;
+    position: relative;
+    margin-left: 48px;
+    margin-right: auto;
   }
 }
 
@@ -857,6 +878,15 @@ hr {
       background-repeat: no-repeat;
       background-size: cover;
       margin-bottom: 2em;
+/*      margin-top: 4em;*/
+    }
+    .photo-crop {
       margin-top: 4em;
+      margin-bottom: 2em;
+      width: 325px;
+      height: 325px;
+      overflow: hidden;
+      z-index: 100;
+      position: relative;
     }
 }
