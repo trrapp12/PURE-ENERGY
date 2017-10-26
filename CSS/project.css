@@ -371,8 +371,205 @@ a:link {
          url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
+/*elements in the footer*/
+.wrapper {
+  overflow: hidden;
+  width: 1000px;
+  height: 30px;
+}
+.social-media a {
+  font-size: 2em;
+  color: white;
+  margin-right: 5em;
+  margin-left: 10px;
+}
+.social-media a:link {
+  font-size: 1.5em;
+  color: gray;
+  margin-left: 5px;
+}
 
-/*footer*/
+/*in this section of code I define an area with #hidden-span#helper that will be changed later on by the #hidden-span1:hover ~ #hidden-span1helper syntax.
+This syntax uses the hover attribute of the #hidden-span1 to effect the css of the #hidden-span1helper*/
+
+/*defines the span helpers*/
+#hidden-span1helper {
+  width: 1px;
+  display: inline-block;
+  font-size: 1em;
+  height: 100px;
+  margin-left: 5px;
+  transform: translateX(-70px);
+}
+
+#hidden-span2helper {
+  width: 1px;
+  display: inline-block;
+  font-size: 1em;
+  height: 100px;
+  margin-left: 5px;
+  transform: translateX(-70px);
+}
+#hidden-span3helper {
+  width: 1px;
+  display: inline-block;
+  font-size: 1em;
+  height: 100px;
+  margin-left: 5px;
+  transform: translateX(-70px);
+}
+#hidden-span4helper {
+  width: 1px;
+  display: inline-block;
+  font-size: 1em;
+  height: 100px;
+  margin-left: 5px;
+  transform: translateX(-70px);
+}
+#hidden-span5helper {
+  width: 1px;
+  display: inline-block;
+  font-size: 1em;
+  height: 100px;
+  margin-left: 5px;
+  transform: translateX(-70px);
+}
+#hidden-span6helper {
+  width: 1px;
+  display: inline-block;
+  font-size: 1em;
+  height: 100px;
+  margin-left: 5px;
+  transform: translateX(-70px);
+}
+#hidden-span7helper {
+  width: 1px;
+  display: inline-block;
+  font-size: 1em;
+  height: 100px;
+  margin-left: 5px;
+  transform: translateX(-70px);
+}
+#hidden-span8helper {
+  width: 1px;
+  display: inline-block;
+  font-size: 1em;
+  height: 100px;
+  margin-left: 5px;
+  transform: translateX(-70px);
+}
+#hidden-span9helper {
+  width: 1px;
+  display: inline-block;
+  font-size: 1em;
+  height: 100px;
+  margin-left: 5px;
+  transform: translateX(-70px);
+}
+#hidden-span10helper {
+  width: 1px;
+  display: inline-block;
+  font-size: 1em;
+  height: 100px;
+  margin-left: 5px;
+  transform: translateX(-70px);
+}
+
+/*introduces the syntax that will affect the spanhelpers*/
+
+#hidden-span1:hover ~ #hidden-span1helper {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: pink;
+  transition-duration: .5s;
+  transform: translateX(10px);
+}
+#hidden-span2:hover ~ #hidden-span2helper {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: pink;
+  transition-duration: .5s;
+  transform: translateX(10px);
+}
+#hidden-span3:hover ~ #hidden-span3helper {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: pink;
+  transition-duration: .5s;
+  transform: translateX(10px);
+}
+#hidden-span4:hover ~ #hidden-span4helper {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: pink;
+  transition-duration: .5s;
+  transform: translateX(10px);
+}
+#hidden-span5:hover ~ #hidden-span5helper {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: pink;
+  transition-duration: .5s;
+  transform: translateX(10px);
+}
+#hidden-span6:hover ~ #hidden-span6helper {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: pink;
+  transition-duration: .5s;
+  transform: translateX(10px);
+}
+#hidden-span7:hover ~ #hidden-span7helper {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: pink;
+  transition-duration: .5s;
+  transform: translateX(10px);
+}
+#hidden-span8:hover ~ #hidden-span8helper {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: pink;
+  transition-duration: .5s;
+  transform: translateX(10px);
+}
+#hidden-span9:hover ~ #hidden-span9helper {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: pink;
+  transition-duration: .5s;
+  transform: translateX(10px);
+}
+#hidden-span10:hover ~ #hidden-span10helper {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: pink;
+  transition-duration: .5s;
+  transform: translateX(10px);
+}
+/* end of spans and span helpers */
+
+/*end of footer*/
 
 hr {
   width: 90%;
