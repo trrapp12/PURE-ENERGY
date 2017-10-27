@@ -123,7 +123,6 @@ p {
          url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 
-
 .photos {
     float: left;
     width: 436px;
@@ -132,9 +131,13 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 2em;
-/*    margin-top: 4em;*/
 }
 
+.photo-bullet-points {
+    float: none;
+    display: block;
+    margin-bottom: 1vh;
+}
 .gradient {
   top:100px;
   width: 100%;
@@ -200,7 +203,11 @@ p {
 /*hamburger menus end*/
 
 .lower-ul {
-  padding: 10px;
+    padding: 10px;
+    margin-left: auto;
+    position: relative;
+    width: 62%;
+    margin-right: auto;
 }
 
 .nav-li {
@@ -256,6 +263,8 @@ p {
   overflow: hidden;
   z-index: 100;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .align-left {
@@ -280,17 +289,20 @@ p {
   height: 400px;
 }
 .column {
-    width: 30%;
+    width: 33%;
     float: left;
     position: relative;
-    margin-left: 48px;
+    /* margin-left: 48px; */
     margin-right: auto;
+    margin-left: auto;
 }
 
 .center > h1, p {
   display:block;
   width: 90%;
   margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .center-whole {
@@ -392,11 +404,11 @@ a:link {
 This syntax uses the hover attribute of the #hidden-span1 to effect the css of the #hidden-span1helper*/
 
 /*defines the span helpers*/
-.wrapper #hidden-span1helper {
+#hidden-span1helper {
   width: 400px;
   display: inline-block;
   font-size: 15px;
-  height: 20px;
+  height: 50px;
   margin-left: 5px;
   transform: translateX(-325px);
   -webkit-transition: all 1s ease;
@@ -502,7 +514,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   height: 100px;
   font-size: 15px;
   transition:.2s 1s ease;
-  transform: translateX(200px);
+  transform: translateX(120px);
   color: white;
 }
 #hidden-span2:hover ~ #hidden-span2helper {
@@ -620,11 +632,12 @@ hr {
     margin-left: 0;
   }
   .column {
-    width: 80%;
+    width: 33%;
+    float: left;
     position: relative;
-    margin-left: auto;
+    /* margin-left: 48px; */
     margin-right: auto;
-    float: none;
+    margin-left: auto;
   }
 /*  .photos {
     display: none;
@@ -637,18 +650,23 @@ hr {
     height: auto;
   }
   .center {
-    display: relative;
-    width: 100%;
-    margin-right: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
     margin-left: auto;
+    margin-right: auto;
   }
   .center > h1, p {
     display:block;
     width: 100%;
     margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .center > h1 {
     margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
   }
   .center-whole {
     width: 90%;
@@ -737,6 +755,8 @@ hr {
   }
   .photo-crop {
     margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
   }
   #footer > div > p {
     letter-spacing: .3em;
@@ -788,6 +808,13 @@ hr {
      display: none
    }
 
+/*   .lower-ul {
+      padding: 10px;
+      margin-left: auto;
+      position: relative;
+      margin-right: auto;
+   }*/
+
 }
 
 /*950px to 1055 px*/
@@ -805,10 +832,28 @@ hr {
   }
   .photo-crop {
     margin-top: 4em;
+    margin-left: auto:
+    margin-right: auto;
   }
+
+/*  ul .lower-ul {
+    padding: 10px;
+    margin-left: auto;
+    position: relative;
+    margin-right: auto;
+   }*/
 }
 
-
+@media screen and (max-width: 1054px) {
+    .lower-ul {
+    padding: 10px;
+    margin-left: auto;
+    position: relative;
+    margin-right: auto;
+    width: 100%;
+   }
+}
+ 
 /*at less than 1000px bring the margins down on the .nav-li so they still fit on the same line*/
 @media screen and (max-width: 1000px) {
 
@@ -830,6 +875,8 @@ hr {
       display: block;
       width: 71%;
       margin-bottom: 8px;
+      margin-left: auto;
+      margin-right: auto;
   }
   hr {
     width: 71%;
@@ -854,18 +901,23 @@ hr {
     overflow: hidden;
     z-index: 100;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
   .center > h1, p {
     display: block;
     width: 61%;
     margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .column {
-    width: 29%;
+    width: 33%;
     float: left;
     position: relative;
-    margin-left: 48px;
+    /* margin-left: 48px; */
     margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -888,5 +940,7 @@ hr {
       overflow: hidden;
       z-index: 100;
       position: relative;
+      margin-left: auto;
+      margin-right: auto;
     }
 }
