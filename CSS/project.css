@@ -123,6 +123,15 @@ p {
          url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 
+.hide {
+  opacity: 0;
+  transition: opacity 2s linear;
+  -webkit-transition: opacity 2s linear;
+  -o-transition: opacity 2s linear;
+  -moz-transition: opacity 2s linear;
+  -transition: opacity 2s linear;
+}
+
 .photos {
     float: left;
     width: 436px;
@@ -265,6 +274,10 @@ p {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+}
+
+#Layer_1 {
+  width: 50%;
 }
 
 .align-left {

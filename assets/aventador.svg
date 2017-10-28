@@ -4,6 +4,7 @@
             .cls-1{
                 fill:none;
                 stroke: white;
+                stroke-width: 10;
                 stroke-miterlimit:10;
                 stroke-dasharray: 2500, 4000;
                 stroke-dashoffset:200;
