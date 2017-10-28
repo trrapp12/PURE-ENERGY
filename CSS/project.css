@@ -372,6 +372,12 @@ a:link {
   display: block;
 }
 
+#hideCarID {
+
+  margin-right: auto;
+  margin-left: calc(100vw / 2 - 200px)
+}
+
 
 /*footer */
 #footer {
