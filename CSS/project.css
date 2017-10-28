@@ -147,6 +147,7 @@ p {
     display: block;
     margin-bottom: 1vh;
 }
+
 .gradient {
   top:100px;
   width: 100%;
@@ -278,6 +279,7 @@ p {
 
 #Layer_1 {
   width: 50%;
+  margin-top: 50px;
 }
 
 .align-left {
@@ -345,6 +347,18 @@ a:link {
   text-decoration: none;
 }
 
+.wrapper {
+  overflow: hidden; 
+  z-index: 200;
+}
+
+.wrapper a:link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
 .button {
   border: 1em;
   border-radius: .2em;
@@ -373,9 +387,8 @@ a:link {
 }
 
 #hideCarID {
-
   margin-right: auto;
-  margin-left: calc(100vw / 2 - 200px)
+  margin-left: calc(100% / 2 - 200px)
 }
 
 
@@ -407,224 +420,313 @@ a:link {
          url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 /*elements in the footer*/
-.wrapper {
-  overflow: hidden;
-  width: auto;
-  height: 50px;
-}
-.wrapper a {
-  font-size: 2em;
-  color: white;
-  margin-right: 5em;
-  margin-left: 10px;
-}
 
 /*in this section of code I define an area with #hidden-span1helper that will be changed later on by the #hidden-span1:hover ~ #hidden-span1helper syntax.
 This syntax uses the hover attribute of the #hidden-span1 to effect the css of the #hidden-span1helper*/
 
 /*defines the span helpers*/
-#hidden-span1helper {
+#hidden-span1moved {
   width: 400px;
   display: inline-block;
-  font-size: 15px;
+  font-size: 1em;
   height: 50px;
   margin-left: 5px;
-  transform: translateX(-325px);
+  transform: translateX(-600px);
   -webkit-transition: all 1s ease;
-  color:white;
+  color: white;
 }
 
-#hidden-span2helper {
+#hidden-span2moved {
   width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
-  transform: translateX(-150px);
+  transform: translateX(-600px);
   -webkit-transition: all 1s ease;
   color: white;
 }
-#hidden-span3helper {
+#hidden-span3moved {
   width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
-  transform: translateX(-350px);
+  transform: translateX(-500px);
   -webkit-transition: all 1s ease;
   color: white;
 }
-#hidden-span4helper {
+#hidden-span4moved {
   width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
-  transform: translateX(-350px);
+  transform: translateX(-500px);
   -webkit-transition: all 1s ease;
   color: white;
 }
-#hidden-span5helper {
+#hidden-span5moved {
   width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
-  transform: translateX(-350px);
+  transform: translateX(-500px);
   -webkit-transition: all 1s ease;
   color: white;
 }
-#hidden-span6helper {
+#hidden-span6moved {
   width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
-  transform: translateX(-350px);
+  transform: translateX(-500px);
   -webkit-transition: all 1s ease;
   color: white;
 }
-#hidden-span7helper {
+#hidden-span7moved {
   width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
-  transform: translateX(-350px);
+  transform: translateX(-700px);
   -webkit-transition: all 1s ease;
   color: white;
 }
-#hidden-span8helper {
+#hidden-span8moved {
   width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
-  transform: translateX(-350px);
+  transform: translateX(-500px);
   -webkit-transition: all 1s ease;
   color: white;
 }
-#hidden-span9helper {
+#hidden-span9moved {
   width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
-  transform: translateX(-350px);
+  transform: translateX(-500px);
   -webkit-transition: all 1s ease;
   color: white;
 }
-#hidden-span10helper {
+#hidden-span10moved {
   width: 400px;
   display: inline-block;
   font-size: 1em;
   height: 50px;
   margin-left: 5px;
-  transform: translateX(-350px);
+  transform: translateX(-700px);
   -webkit-transition: all 1s ease;
   color: white;
 }
 
 /*introduces the syntax that will affect the spanhelpers*/
-
-#hidden-span1:hover ~ #hidden-span1helper {
-  display: inline-block;
-  width: 100px
-  height: 100px;
-  font-size: 15px;
-  transition:.2s 1s ease;
-  transform: translateX(120px);
-  color: white;
+#hidden-span1 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
 }
-#hidden-span2:hover ~ #hidden-span2helper {
+#hidden-span2 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span3 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span4 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span5 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span6 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span7 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span8 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span9 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span10 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span1:hover ~ #hidden-span1moved {
   display: inline-block;
   width: 100px
   height: 100px;
   font-size: 1em;
-  background-color: pink;
-  transition-duration: .5s;
-  transform: translateX(-20px);
-  color: white;
-}
-#hidden-span3:hover ~ #hidden-span3helper {
-  display: inline-block;
-  width: 100px
-  height: 100px;
-  font-size: 15px;
-  background-color: pink;
-  transition-duration:all 1s ease;
-  transform: translateX(30px);
-  color: white;
-}
-#hidden-span4:hover ~ #hidden-span4helper {
-  display: inline-block;
-  width: 100px
-  height: 100px;
-  font-size: 1em;
-  background-color: pink;
-  transition-duration: .5s;
-  transform: translateX(40px);
-  color: white;
-}
-#hidden-span5:hover ~ #hidden-span5helper {
-  display: inline-block;
-  width: 100px
-  height: 100px;
-  font-size: 1em;
-  background-color: pink;
-  transition-duration: .5s;
+  background-color: rgba(255, 182, 193, .25);
+  /*  transition:.2s 1s ease;*/
+/*  transition:.2s 1s ease;*/
   transform: translateX(50px);
-  color: white;
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-#hidden-span6:hover ~ #hidden-span6helper {
+#hidden-span2:hover ~ #hidden-span2moved {
   display: inline-block;
   width: 100px
   height: 100px;
   font-size: 1em;
-  background-color: pink;
+  background-color: rgba(255, 182, 193, .25);
+  /*  transition:.2s 1s ease;*/
+/*  transition:.2s 1s ease;*/
+  transform: translateX(50px);
   transition-duration: .5s;
-  transform: translateX(60px);
-  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-#hidden-span7:hover ~ #hidden-span7helper {
+#hidden-span3:hover ~ #hidden-span3moved {
   display: inline-block;
   width: 100px
   height: 100px;
   font-size: 1em;
-  background-color: pink;
+  background-color: rgba(255, 182, 193, .25);
+  /*  transition:.2s 1s ease;*/
+/*  transition:.2s 1s ease;*/
+  transform: translateX(50px);
   transition-duration: .5s;
-  transform: translateX(80px);
-  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-#hidden-span8:hover ~ #hidden-span8helper {
+#hidden-span4:hover ~ #hidden-span4moved {
   display: inline-block;
   width: 100px
   height: 100px;
   font-size: 1em;
-  background-color: pink;
+  background-color: rgba(255, 182, 193, .25);
+  /*  transition:.2s 1s ease;*/
+/*  transition:.2s 1s ease;*/
+  transform: translateX(50px);
   transition-duration: .5s;
-  transform: translateX(90px);
-  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-#hidden-span9:hover ~ #hidden-span9helper {
+#hidden-span5:hover ~ #hidden-span5moved {
   display: inline-block;
   width: 100px
   height: 100px;
   font-size: 1em;
-  background-color: pink;
+  background-color: rgba(255, 182, 193, .25);
+  /*  transition:.2s 1s ease;*/
+/*  transition:.2s 1s ease;*/
+  transform: translateX(50px);
   transition-duration: .5s;
-  transform: translateX(100px);
-  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-#hidden-span10:hover ~ #hidden-span10helper {
+#hidden-span6:hover ~ #hidden-span6moved {
   display: inline-block;
   width: 100px
   height: 100px;
   font-size: 1em;
-  background-color: pink;
+  background-color: rgba(255, 182, 193, .25);
+  /*  transition:.2s 1s ease;*/
+/*  transition:.2s 1s ease;*/
+  transform: translateX(50px);
   transition-duration: .5s;
-  transform: translateX(110px);
-  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span7:hover ~ #hidden-span7moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  /*  transition:.2s 1s ease;*/
+/*  transition:.2s 1s ease;*/
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span8:hover ~ #hidden-span8moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  /*  transition:.2s 1s ease;*/
+/*  transition:.2s 1s ease;*/
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span9:hover ~ #hidden-span9moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  /*  transition:.2s 1s ease;*/
+/*  transition:.2s 1s ease;*/
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span10:hover ~ #hidden-span10moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  /*  transition:.2s 1s ease;*/
+/*  transition:.2s 1s ease;*/
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /* end of spans and span helpers */
 
