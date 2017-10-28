@@ -391,17 +391,29 @@ a:link {
   margin-left: calc(100% / 2 - 200px)
 }
 
-#parrallelogram {
-    width: 80%;
-    height: 40vh;
-    /*pushes it to the left in a responsive manner*/
-    margin-left: calc(100vw / 3);
+.sectionTwoRow {
     position: relative;
-    /*rotates the image, has to be done before it is transformed or else you just get a rectangle*/
-    -ms-transform: rotate(180deg);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow-y: auto;
+    overflow: visible;
+}
+
+#parrallelogram {
+    background-image: url(../images/pexels-photo-251287.png);
+    background-attachment: fixed;
+    -webkit-background-clip: border-box;
+    background-size: cover;
+    transform: translateZ(-2000);
+    width: 68%;
+    height: 37vh;
+    margin-left: 248px;
+    margin-bottom: 700px;
+    margin-top: 700px;
+    left: -26px;
+    margin-right: -225px;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-    /*flips the image to make a mirror image*/
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -411,13 +423,6 @@ a:link {
     -webkit-transform: skew(20deg);
     -moz-transform: skew(20deg);
     -o-transform: skew(20deg);
-    /*creates a linear gradient*/
-/*    background: -moz-linear-gradient(90deg, rgba(0,0,0,.0) 0%, rgba(0,0,0,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(0,0,0,.0) 0%, rgba(0,0,0,1) 100%);
-    background: -o-linear-gradient(90deg, rgba(0,0,0,.0) 0%, rgba(0,0,0,1) 100%);
-    background: -ms-linear-gradient(90deg, rgba(0,0,0,.0) 0%, rgba(0,0,0,1) 100%);
-    background: linear-gradient(90deg, rgba(0,0,0,.0) 0%, rgba(0,0,0,1) 100%);*/
-    background-color: black;
 }
 
 /*footer */
