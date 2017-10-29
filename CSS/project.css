@@ -14,6 +14,7 @@ body{
   margin: 0;
   border: 0;
   z-index: -1;
+  overflow-x: hidden;
   background: -o-linear-gradient(#585858, #F7F7F7);
   background: -moz-linear-gradient(#585858, #F7F7F7);
   background: linear-gradient(#585858, #F7F7F7);
@@ -84,7 +85,18 @@ h3 {
   text-align: justify;
   margin-top: 0px;
 }
-
+h4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  color: #CDCDCD;
+  src: url('../fonts/montserrat-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v11-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
 p {
   font-family: 'Raleway', sans-serif;
   font-size: 1.05rem;
@@ -397,21 +409,26 @@ a:link {
     margin-bottom: 100px;
     overflow-y: auto;
     overflow: visible;
+    -webkit-transform: translate3D(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
 }
 
 #parrallelogram {
     background-image: url(../images/pexels-photo-251287.png);
     background-attachment: fixed;
+    background-position-x: 120px;
     -webkit-background-clip: border-box;
     background-size: cover;
+    position: relative;
     transform: translateZ(-2000);
-    width: 68%;
+    width: 65%;
     height: 37vh;
-    margin-left: 248px;
+    margin-left: 462px;
     margin-bottom: 700px;
-    margin-top: 700px;
-    left: -26px;
-    margin-right: -225px;
+    margin-top: 1500px;
+    /* top: 824px; */
+    left: 311px;
+    /* margin-right: -341px; */
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     -moz-transform: scaleX(-1);
@@ -421,8 +438,10 @@ a:link {
     filter: FlipH;
     -ms-filter: "FlipH";
     -webkit-transform: skew(20deg);
-    -moz-transform: skew(20deg);
-    -o-transform: skew(20deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
 }
 
 /*footer */
