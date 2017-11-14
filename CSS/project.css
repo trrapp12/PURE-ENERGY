@@ -135,6 +135,7 @@ p {
          url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 
+/*used in function hideCar()*/
 .hide {
   opacity: 0;
   transition: opacity 2s linear;
@@ -143,6 +144,7 @@ p {
   -moz-transition: opacity 2s linear;
   -transition: opacity 2s linear;
 }
+
 
 .photos {
     float: left;
@@ -204,7 +206,7 @@ p {
   transition: .4s;
 }
 
-/*hamburger menus */
+/*hamburger menus.  Used in JS function rotateFunction(x) */
 
 .changetop {
   -webkit-transform: rotate(-45deg) translate(4px, 5px) ;
@@ -241,44 +243,6 @@ p {
     list-style: none;
   }
 
-/*hidden navbar*/
-
-.navbar {
-  overflow: hidden;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  border: none;
-  outline: none;
-  background-color: inherit;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.show {
-  display: block;
-}
-
-/*end dropdown*/
-
 .photo-crop {
   width: 350px;
   height: 350px;
@@ -289,6 +253,7 @@ p {
   margin-right: auto;
 }
 
+/*this is part of the Aventador svg*/
 #Layer_1 {
   width: 50%;
   margin-top: 50px;
@@ -306,15 +271,6 @@ p {
   padding-bottom: 1em;
 }
 
-.svg_div {
-  text-align: center;
-  align-content: center;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  height: 400px;
-}
 .column {
     width: 33%;
     float: left;
@@ -376,10 +332,6 @@ a:link {
   border-radius: .2em;
   color: #898989;
   float: right;
-}
-
-.clear {
-  clear: both;
 }
 
 .title {
@@ -646,8 +598,6 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
-  /*  transition:.2s 1s ease;*/
-/*  transition:.2s 1s ease;*/
   transform: translateX(50px);
   transition-duration: .5s;
   padding-top: 20px;
@@ -660,8 +610,6 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
-  /*  transition:.2s 1s ease;*/
-/*  transition:.2s 1s ease;*/
   transform: translateX(50px);
   transition-duration: .5s;
   padding-top: 20px;
@@ -674,8 +622,6 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
-  /*  transition:.2s 1s ease;*/
-/*  transition:.2s 1s ease;*/
   transform: translateX(50px);
   transition-duration: .5s;
   padding-top: 20px;
@@ -688,8 +634,6 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
-  /*  transition:.2s 1s ease;*/
-/*  transition:.2s 1s ease;*/
   transform: translateX(50px);
   transition-duration: .5s;
   padding-top: 20px;
@@ -702,8 +646,6 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
-  /*  transition:.2s 1s ease;*/
-/*  transition:.2s 1s ease;*/
   transform: translateX(50px);
   transition-duration: .5s;
   padding-top: 20px;
@@ -716,8 +658,6 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
-  /*  transition:.2s 1s ease;*/
-/*  transition:.2s 1s ease;*/
   transform: translateX(50px);
   transition-duration: .5s;
   padding-top: 20px;
@@ -730,8 +670,6 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
-  /*  transition:.2s 1s ease;*/
-/*  transition:.2s 1s ease;*/
   transform: translateX(50px);
   transition-duration: .5s;
   padding-top: 20px;
@@ -744,8 +682,6 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
-  /*  transition:.2s 1s ease;*/
-/*  transition:.2s 1s ease;*/
   transform: translateX(50px);
   transition-duration: .5s;
   padding-top: 20px;
@@ -758,8 +694,6 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
-  /*  transition:.2s 1s ease;*/
-/*  transition:.2s 1s ease;*/
   transform: translateX(50px);
   transition-duration: .5s;
   padding-top: 20px;
@@ -772,8 +706,6 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
-  /*  transition:.2s 1s ease;*/
-/*  transition:.2s 1s ease;*/
   transform: translateX(50px);
   transition-duration: .5s;
   padding-top: 20px;
