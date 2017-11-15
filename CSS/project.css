@@ -145,7 +145,10 @@ p {
   -transition: opacity 2s linear;
 }
 
-
+.row{
+  width: 100%;
+  height: auto;
+}
 .photos {
     float: left;
     width: 436px;
