@@ -84,6 +84,11 @@ h1 {
 h3 {
   text-align: justify;
   margin-top: 0px;
+  font-family: 'Raleway', sans-serif;
+  margin-left: auto;
+  position: relative;
+  width: 62%;
+  margin-right: auto;
 }
 h4{
   font-family: 'Montserrat', sans-serif;
@@ -743,7 +748,6 @@ hr {
     width: 33%;
     float: left;
     position: relative;
-    /* margin-left: 48px; */
     margin-right: auto;
     margin-left: auto;
   }
@@ -779,12 +783,19 @@ hr {
   .center-whole {
     width: 90%;
     margin-left: auto;
-    /* margin-right: auto; */
     top: 100px;
     position: relative;
   }
   h3 {
     margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    margin-top: 0px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: auto;
+    position: relative;
+    width: 62%;
+    margin-right: auto;
   }
   #footer > div > p {
     letter-spacing: .3em;
@@ -906,7 +917,7 @@ hr {
    }
 
 
-   #nav-li-hide {
+   .nav-li-hide {
      color: white;
      text-decoration: none;
      margin: 1.0em 1.5em 1.0em 1.5em;
