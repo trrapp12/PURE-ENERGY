@@ -786,6 +786,10 @@ hr {
     top: 100px;
     position: relative;
   }
+  .title2 > p {
+    color: white;
+  }
+  
   h3 {
     margin-top: 20px;
     font-family: 'Raleway', sans-serif;
