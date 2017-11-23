@@ -140,7 +140,7 @@ p {
          url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 .sectionThreeHeader {
-    height: 23px;
+    height: 50px;
     width: 100%;
     padding: 200px;
     margin-bottom: 406px;
@@ -150,19 +150,101 @@ p {
     background: linear-gradient(45deg, rgba(27,32,54,1) 0%,rgba(74,105,139,0) 48%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b2036', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-.subSectionThreeHeader {
-    height: 200px;
+.sectionThreeTitle {
+  color: black; 
+  font-size: 2.5em;
+  text-align: justify;
+  margin-top: 0px;
+  font-family: 'Raleway', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 63%;
+  left: 20vw;
+}
+.subSectionThreeHeader{
+    height: 250px;
     opacity: 27;
     width: 101%;
-    padding: 102px;
+    padding: 50px 102px 160px 102px;
     position: relative;
-    left: -129px;
-    top: -94px;
+    left: -19vw;
+    top: -105px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b2036+0,cccccc+100&0.03+26,1+100 */
     background: -moz-linear-gradient(left, rgba(27,32,54,0.01) 0%, rgba(73,77,93,0.03) 26%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(27,32,54,0.01) 0%,rgba(73,77,93,0.03) 26%,rgba(204,204,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba(27,32,54,0.01) 0%,rgba(73,77,93,0.03) 26%,rgba(204,204,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#081b2036', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 */
+}
+
+.sectionThreeTitleUp {
+  color: white; 
+  font-size: 2.5em;
+  text-align: justify;
+  margin-top: 0px;
+  font-family: 'Raleway', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 32%;
+  left: -8vw;
+
+}
+.quote {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  color: #CDCDCD;
+  font-size: 1.25em;
+}
+.quotetop {
+    top: 60px;
+    position: relative;
+}
+.mirror {
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.smallwingquotes{
+  font-size: .5em;
+  width: 10px;
+}
+.wingquoteleft {
+  left: -220px;
+  top: 60px;
+  position: relative;
+}
+.wingquoteright {
+    left: 162px;
+    top: 47px;
+    position: relative;
+}
+.adjustup{
+  position: relative;
+  top: -50px;
+}
+.counterclockwise {
+/* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.clockwise {
+  /* Safari */
+-webkit-transform: rotate(90deg);
+/* Firefox */
+-moz-transform: rotate(90deg);
+/* IE */
+-ms-transform: rotate(90deg);
+/* Opera */
+-o-transform: rotate(90deg);
 }
 
 /*used in function hideCar()*/
@@ -409,7 +491,7 @@ a:link {
     position: relative;
     transform: translateZ(-2000);
     width: 65%;
-    height: 75vh;
+    height: 120vh;
     margin-left: 462px;
     margin-bottom: 700px;
     margin-top: 50px;
