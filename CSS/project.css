@@ -151,7 +151,7 @@ p {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b2036', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .sectionThreeTitle {
-  color: black; 
+  color: white; 
   font-size: 2.5em;
   text-align: justify;
   margin-top: 0px;
@@ -178,7 +178,7 @@ p {
 }
 
 .sectionThreeTitleUp {
-  color: white; 
+  color: black; 
   font-size: 2.5em;
   text-align: justify;
   margin-top: 0px;
