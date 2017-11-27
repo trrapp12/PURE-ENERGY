@@ -20,10 +20,12 @@ function setSpacing () {
 	ourNatureTop.style.right = ((purEnergyTopCoordinates.right - purEnergyTopCoordinates.left) * .20) + "px";
 	// ourNatureTop.style.top = 200 + "px"; example for setting top
 	// ourNatureTop.style.background = "red"; example for setting background
-	console.log("Pure Energy TC position =" + purEnergyTopCoordinates.position, "Pure Energy TC left margin =" + purEnergyTop.style.marginLeft);
-	counterclockwiseTop.style.right = ((purEnergyTopCoordinates.position + purEnergyTopCoordinates.style.marginLeft) + "px")
-	console.log(counterclockwiseTopCoordinates.left, counterclockwiseTopCoordinates.right, purEnergyTopCoordinates.left, purEnergyTopCoordinates.right)
-	console.log(counterclockwiseTop.style.right, purEnergyTopCoordinates.left)
+	var leftMargin = window.getComputedStyle(purEnergyTop, null).getPropertyValue("margin-left")
+	console.log("Pure Energy TC position =" + purEnergyTopCoordinates.left, "Pure Energy TC left margin =" + leftMargin);
+	var x = counterclockwiseTop.style.setProperty('margin-left', 200px);
+	console.log(x)
+	// console.log(counterclockwiseTopCoordinates.left, counterclockwiseTopCoordinates.right, purEnergyTopCoordinates.left, purEnergyTopCoordinates.right)
+	// console.log(counterclockwiseTop.style.right, purEnergyTopCoordinates.left)
 }
 // alert("Javascript connected");
 window.onload = setSpacing();
