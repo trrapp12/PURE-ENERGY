@@ -11,22 +11,26 @@ function setSpacing () {
 	var pureEnergyBottom = document.getElementById('pureEnergyBottom');
 	var ourNatureBottom = document.getElementById('ourNatureBottom');
 
-	var sectionThreeCoordinates = sectionThreeHeader.getBoundingClientRect();
-	var purEnergyTopCoordinates = purEnergyTop.getBoundingClientRect();
-	var counterclockwiseTopCoordinates = counterclockwiseTop.getBoundingClientRect();
+ 	var sectionThreeCoordinates = sectionThreeHeader.getBoundingClientRect();
+  	var purEnergyTopCoordinates = purEnergyTop.getBoundingClientRect();
 
-	console.log (sectionThreeCoordinates.bottom, sectionThreeCoordinates.height, sectionThreeCoordinates.left, sectionThreeCoordinates.right, sectionThreeCoordinates.top, sectionThreeCoordinates.width, sectionThreeCoordinates.x, sectionThreeCoordinates.y);
+ 	var purEnergyTopCoordinatesCalc = window.getComputedStyle(purEnergyTop).getPropertyValue("margin-left");
+ 	console.log("purEnergyTopCoordinatesCalc is: " + purEnergyTopCoordinatesCalc);
+ 	var purEnergyTopCoordinatesPos = window.getComputedStyle(purEnergyTop).getPropertyValue("left");
+ 	console.log("purEnergyTopCoordinatesPos is: " + purEnergyTopCoordinatesPos);
+  	var counterclockwiseTopCoordinates = counterclockwiseTop.getBoundingClientRect();
 
-	ourNatureTop.style.right = ((purEnergyTopCoordinates.right - purEnergyTopCoordinates.left) * .20) + "px";
-	// ourNatureTop.style.top = 200 + "px"; example for setting top
-	// ourNatureTop.style.background = "red"; example for setting background
+  	console.log (sectionThreeCoordinates.bottom, sectionThreeCoordinates.height, sectionThreeCoordinates.left, sectionThreeCoordinates.right, sectionThreeCoordinates.top, sectionThreeCoordinates.width, sectionThreeCoordinates.x, sectionThreeCoordinates.y);
+
+  	ourNatureTop.style.right = ((purEnergyTopCoordinates.right - purEnergyTopCoordinates.left) * .20) + "px";
+
 	var leftMargin = window.getComputedStyle(purEnergyTop, null).getPropertyValue("margin-left")
-	console.log("Pure Energy TC position =" + purEnergyTopCoordinates.left, "Pure Energy TC left margin =" + leftMargin);
-	var x = counterclockwiseTop.style.setProperty('margin-left', 200px);
+	var x = (purEnergyTopCoordinatesPos + purEnergyTopCoordinatesCalc)
+	counterclockwiseTop.style.right = (x + "px")
 	console.log(x)
-	// console.log(counterclockwiseTopCoordinates.left, counterclockwiseTopCoordinates.right, purEnergyTopCoordinates.left, purEnergyTopCoordinates.right)
-	// console.log(counterclockwiseTop.style.right, purEnergyTopCoordinates.left)
+	console.log(counterclockwiseTop.style.right)
+
 }
-// alert("Javascript connected");
+
 window.onload = setSpacing();
 window.addEventListener('resize', setSpacing);
