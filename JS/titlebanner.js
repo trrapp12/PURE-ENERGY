@@ -1,5 +1,5 @@
 function setSpacing () {
-	// create variables for the separate elements
+// create variables for the separate elements
 	var sectionThreeHeader = document.getElementById('sectionThreeHeader');
 	var subSectionThreeHeader = document.getElementById('subSectionThreeHeader');
 	var ourNatureTop = document.getElementById('ourNatureTop');
@@ -11,13 +11,13 @@ function setSpacing () {
 	var pureEnergyBottom = document.getElementById('pureEnergyBottom');
 	var ourNatureBottom = document.getElementById('ourNatureBottom');
 
+// create variable to get the bounding box information
  	var sectionThreeCoordinates = sectionThreeHeader.getBoundingClientRect();
   	var purEnergyTopCoordinates = purEnergyTop.getBoundingClientRect();
-
  	var purEnergyTopCoordinatesCalc = window.getComputedStyle(purEnergyTop).getPropertyValue("margin-left");
- 	console.log("purEnergyTopCoordinatesCalc is: " + purEnergyTopCoordinatesCalc);
+ 		console.log("purEnergyTopCoordinatesCalc is: " + purEnergyTopCoordinatesCalc);
  	var purEnergyTopCoordinatesPos = window.getComputedStyle(purEnergyTop).getPropertyValue("left");
- 	console.log("purEnergyTopCoordinatesPos is: " + purEnergyTopCoordinatesPos);
+ 		console.log("purEnergyTopCoordinatesPos is: " + purEnergyTopCoordinatesPos);
   	var counterclockwiseTopCoordinates = counterclockwiseTop.getBoundingClientRect();
 
   	console.log (sectionThreeCoordinates.bottom, sectionThreeCoordinates.height, sectionThreeCoordinates.left, sectionThreeCoordinates.right, sectionThreeCoordinates.top, sectionThreeCoordinates.width, sectionThreeCoordinates.x, sectionThreeCoordinates.y);
@@ -26,10 +26,8 @@ function setSpacing () {
 
 	var leftMargin = window.getComputedStyle(purEnergyTop, null).getPropertyValue("margin-left")
 	var x = (purEnergyTopCoordinatesPos + purEnergyTopCoordinatesCalc)
-	counterclockwiseTop.style.right = (x + "px")
+	document.getElementById("counterclockwiseTop").style.setProperty("position", "static")
 	console.log(x)
-	console.log(counterclockwiseTop.style.right)
-
 }
 
 window.onload = setSpacing();
