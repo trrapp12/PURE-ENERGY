@@ -18,18 +18,19 @@ function setSpacing () {
  	// create variables defining the coordinates to the top, center logo.  Sets the right property of top quote "Our Nature Consists in Motion," to
   	var purEnergyTopCoordinates = purEnergyTop.getBoundingClientRect();
   	ourNatureTop.style.position = "absolute"
-  	// ourNatureTop.style.right = (purEnergyTopCoordinates.left + 5) + "px";
 
 	// this block uses window to get the calculated "margin-left" value of the top PURE EnERGY logo, sets that equal to a variable, parses the "px" off of it, and then console logs the value
  	var purEnergyTopCoordinatesCalc = window.getComputedStyle(purEnergyTop).getPropertyValue("margin-left");
  		console.log("purEnergyTopCoordinatesCalc is: " + purEnergyTopCoordinatesCalc);
- 		// parses the "px" off of the measurements and keeps the significant digits by using float
+
+ 	// parses the "px" off of the measurements and keeps the significant digits by using float
  	var pETCC = parseFloat(purEnergyTopCoordinatesCalc)
  		console.log(pETCC)
 
 	// this block uses window to get the calculated "left" value of the top Pure Energy logo, sets that equal to a variable, parses the "px" off of it, and then console logs the value
  	var purEnergyTopCoordinatesPos = window.getComputedStyle(purEnergyTop).getPropertyValue("left");
  		console.log("purEnergyTopCoordinatesPos is: " + purEnergyTopCoordinatesPos);
+
  	// parses the "px" off of the measurements and keeps the significant digits by using float
  	var pETCP = parseFloat(purEnergyTopCoordinatesPos)
  		console.log(pETCP)
