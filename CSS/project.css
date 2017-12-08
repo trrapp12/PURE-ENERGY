@@ -197,8 +197,8 @@ p {
   font-size: 1.25em;
 }
 .quotetop {
-    top: 60px;
-    position: relative;
+/*    top: 60px;
+    position: relative;*/
 }
 .mirror {
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -211,14 +211,14 @@ p {
   width: 10px;
 }
 .wingquoteleft {
-  left: -220px;
+/*  left: -220px;
   top: 60px;
-  position: relative;
+  position: relative;*/
 }
 .wingquoteright {
-    left: 162px;
+/*    left: 162px;
     top: 47px;
-    position: relative;
+    position: relative;*/
 }
 .adjustup{
   position: relative;
