@@ -1,17 +1,40 @@
+/*normalize margins and padding and border*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/*sets html height to 100% so body will fill the entire space*/
+html {
+    height: 100%;
+}
+/*element basics */
 body{
   margin: 0;
   border: 0;
-  background-image:url("images/45-degree-fabric-light.png");
   z-index: -1;
+  overflow-x: hidden;
+  background: -o-linear-gradient(#585858, #F7F7F7);
+  background: -moz-linear-gradient(#585858, #F7F7F7);
+  background: linear-gradient(#585858, #F7F7F7);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*this is to help with the flickering of the banner image as it refreshes*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
 }
 
 nav {
-  top: 0;
-  width: 100%;
-  height: 100px;
-  background-color: gray;
-  position: fixed;
-  z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(96,96,96,.80);
+    background: linear-gradient(rgba(96,96,96,.80), rgba(96,96,96,.01));
+    position: fixed;
+    z-index: 100;
+    mix-blend-mode: difference;
 }
 
 ul {
@@ -19,6 +42,13 @@ ul {
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
   margin: 0;
+  src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Regular'),
+         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 
 li {
@@ -28,6 +58,13 @@ li {
   text-decoration: none;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
+  src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Regular'),
+         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 
 h1 {
@@ -35,35 +72,218 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight:lighter;
   color: #CDCDCD;
+  src: url('../fonts/montserrat-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v11-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
 h3 {
   text-align: justify;
   margin-top: 0px;
+  font-family: 'Raleway', sans-serif;
+  margin-left: auto;
+  position: relative;
+  width: 62%;
+  margin-right: auto;
+}
+h4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  color: #CDCDCD;
+  src: url('../fonts/montserrat-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v11-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.05rem;
+  /*width: 900px;*/
+  text-align: justify;
+  margin-bottom: 50px;
+  src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Regular'),
+         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 
+/*classes*/
+.title-font {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14vw;
+    color: white;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    line-height: 1;
+    text-align: center;
+    display: inline-block;
+    src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Raleway'), local('Raleway-Regular'),
+         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+.sectionThreeHeader {
+    height: 50px;
+    width: 100%;
+    padding: 200px;
+    margin-bottom: 406px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b2036+0,7db9e8+100&1+0,0+48 */
+    background: -moz-linear-gradient(45deg, rgba(27,32,54,1) 0%, rgba(74,105,139,0) 48%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(27,32,54,1) 0%,rgba(74,105,139,0) 48%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(27,32,54,1) 0%,rgba(74,105,139,0) 48%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b2036', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.sectionThreeTitle {
+  color: white; 
+  font-size: 2.5em;
+  text-align: justify;
+  margin-top: 0px;
+  font-family: 'Raleway', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 63%;
+  left: 20vw;
+}
+.subSectionThreeHeader{
+    height: 250px;
+    opacity: 27;
+    width: 101%;
+    padding: 50px 102px 160px 102px;
+    position: relative;
+    left: -19vw;
+    top: -105px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b2036+0,cccccc+100&0.03+26,1+100 */
+    background: -moz-linear-gradient(left, rgba(27,32,54,0.01) 0%, rgba(73,77,93,0.03) 26%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(27,32,54,0.01) 0%,rgba(73,77,93,0.03) 26%,rgba(204,204,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(27,32,54,0.01) 0%,rgba(73,77,93,0.03) 26%,rgba(204,204,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#081b2036', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 */
+}
+
+.sectionThreeTitleUp {
+  color: black; 
+  font-size: 2.5em;
+  text-align: justify;
+  margin-top: 0px;
+  font-family: 'Raleway', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 32%;
+  left: -8vw;
+
+}
+.quote {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  color: #CDCDCD;
+  font-size: 1.25em;
+}
+.quotetop {
+/*    top: 60px;
+    position: relative;*/
+}
+.mirror {
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.smallwingquotes{
+  font-size: .5em;
+  width: 10px;
+}
+.wingquoteleft {
+/*  left: -220px;
+  top: 60px;
+  position: relative;*/
+}
+.wingquoteright {
+/*    left: 162px;
+    top: 47px;
+    position: relative;*/
+}
+.adjustup{
+  position: relative;
+  top: -50px;
+}
+.counterclockwise {
+/* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.clockwise {
+  /* Safari */
+-webkit-transform: rotate(90deg);
+/* Firefox */
+-moz-transform: rotate(90deg);
+/* IE */
+-ms-transform: rotate(90deg);
+/* Opera */
+-o-transform: rotate(90deg);
+}
+
+/*used in function hideCar()*/
+.hide {
+  opacity: 0;
+  transition: opacity 2s linear;
+  -webkit-transition: opacity 2s linear;
+  -o-transition: opacity 2s linear;
+  -moz-transition: opacity 2s linear;
+  -transition: opacity 2s linear;
+}
+
+.row{
+  width: 100%;
+  height: auto;
+}
 .photos {
-  float: left;
-  width:  280px;
-  height: 280px;
-  background-position: 50% 50%;
-  background-repeat:   no-repeat;
-  background-size:     cover;
-  margin-bottom: 2em;
-  margin-top: 4em;
+    float: left;
+    width: 436px;
+    height: 436px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2em;
 }
 
-.second-nav {
+.photo-bullet-points {
+    float: none;
+    display: block;
+    margin-bottom: 1vh;
+}
+
+.gradient {
   top:100px;
   width: 100%;
-  position: fixed;
-  height: 900px;
+  position: absolute;
+  height: 100%;
   z-index: -1;
-  background: gray;
-  background: -webkit-linear-gradient(gray, #F7F7F7);
-  background: -o-linear-gradient(gray, #F7F7F7);
-  background: -moz-linear-gradient(gray, #F7F7F7);
-  background: linear-gradient(gray, #F7F7F7); /* Standard syntax */
+
 }
 
 .container {
@@ -72,24 +292,61 @@ h3 {
 }
 
 .speed {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: 55em;
-  overflow: hidden;
+    width: 100%;
+    height: 137em;
+    margin-bottom: 50px;
+    padding: 0;
+    position: relative;
 }
 
 .banner-image {
   width: 100%;
-  height: auto;
+  height: 60em;
+  top: 70em;
   margin: 0;
   border: 0;
+  background-image: url('../images/aventador.jpg');
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:center;
+  position:relative;
 }
 
+.hamburger {
+  width: 30px;
+  height: .125em;
+  background-color: white;
+  margin: 5px 2.5em 5px 2.5em;
+  z-index: 5;
+  transition: .4s;
+}
+
+/*hamburger menus.  Used in JS function rotateFunction(x) */
+
+.changetop {
+  -webkit-transform: rotate(-45deg) translate(4px, 5px) ;
+    transform: rotate(-45deg) translate(4px, 5px) ;
+    width: 20px;
+  }
+
+.changemiddle {
+  opacity: 0;
+}
+
+.changebottom {
+  -webkit-transform: rotate(45deg) translate(-14px, -5px);
+  transform: rotate(45deg) translate (-13px, -7px) ;
+  width: 20px;
+}
+
+/*hamburger menus end*/
+
 .lower-ul {
-  padding: 10px;
+    padding: 10px;
+    margin-left: auto;
+    position: relative;
+    width: 62%;
+    margin-right: auto;
 }
 
 .nav-li {
@@ -100,6 +357,22 @@ h3 {
     z-index: 5;
     list-style: none;
   }
+
+.photo-crop {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  z-index: 100;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*this is part of the Aventador svg*/
+#Layer_1 {
+  width: 50%;
+  margin-top: 50px;
+}
 
 .align-left {
   text-align: center;
@@ -113,56 +386,30 @@ h3 {
   padding-bottom: 1em;
 }
 
-/*#banner {
-  margin-left: -1em;
-  padding-left: -1em;
-  /*width: 1920 px;
-  height: auto;
-  position: fixed;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 5px;
-
-  
-}*/
-
-p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.05rem;
-  /*width: 900px;*/
-  text-align: justify;
-  margin-bottom: 50px;
-}
-
-.svg_div {
-  text-align: center;
-  align-content: center;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  height: 400px;
-}
-
 .column {
-  width: 30%;
-  float: right;
-  position: relative;
-  margin-left: 1em;
+    width: 33%;
+    float: left;
+    position: relative;
+    /* margin-left: 48px; */
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .center > h1, p {
   display:block;
   width: 90%;
   margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .center-whole {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  top: 100px;
-  position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    position: relative;
+    height: 130em;
 }
 
 a.example {
@@ -184,22 +431,30 @@ a:link {
   text-decoration: none;
 }
 
+.wrapper {
+  overflow: hidden; 
+  z-index: 200;
+}
+
+.wrapper a:link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
 .button {
   border: 1em;
   border-radius: .2em;
-  color: gray;
+  color: #898989;
   float: right;
-}
-
-.clear {
-  clear: both;
 }
 
 .title {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  height:10em;
+  height: 21em;
   top: 200px;
   position: relative;
   z-index: 1;
@@ -211,6 +466,53 @@ a:link {
   display: block;
 }
 
+#hideCarID {
+  margin-right: auto;
+  margin-left: calc(100% / 2 - 200px)
+}
+
+.sectionTwoRow {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    z-index: -100;
+    overflow-y: auto;
+    overflow: visible;
+    -webkit-transform: translate3D(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+}
+
+#parrallelogram {
+    background-image: url(../images/pexels-photo-251287.png);
+    background-attachment: fixed;
+    background-position-x: 120px;
+    -webkit-background-clip: border-box;
+    background-size: cover;
+    position: relative;
+    transform: translateZ(-2000);
+    width: 65%;
+    height: 120vh;
+    margin-left: 462px;
+    margin-bottom: 700px;
+    margin-top: 50px;
+    left: 345px;
+    top: -585px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    -webkit-transform: skew(20deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+}
+
+/*footer */
 #footer {
   background-color: transparent;
   width: 100%;
@@ -229,7 +531,306 @@ a:link {
   font-size: 1.5em;
   font-family: 'Raleway', sans-serif;
   color: white;
+  src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Regular'),
+         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
+/*elements in the footer*/
+
+/*in this section of code I define an area with #hidden-span1helper that will be changed later on by the #hidden-span1:hover ~ #hidden-span1helper syntax.
+This syntax uses the hover attribute of the #hidden-span1 to effect the css of the #hidden-span1helper*/
+
+/*defines the span helpers*/
+#hidden-span1moved {
+  width: 400px;
+  display: inline-block;
+  font-size: 1em;
+  height: 50px;
+  margin-left: 5px;
+  transform: translateX(-600px);
+  -webkit-transition: all 1s ease;
+  color: white;
+}
+
+#hidden-span2moved {
+  width: 400px;
+  display: inline-block;
+  font-size: 1em;
+  height: 50px;
+  margin-left: 5px;
+  transform: translateX(-600px);
+  -webkit-transition: all 1s ease;
+  color: white;
+}
+#hidden-span3moved {
+  width: 400px;
+  display: inline-block;
+  font-size: 1em;
+  height: 50px;
+  margin-left: 5px;
+  transform: translateX(-500px);
+  -webkit-transition: all 1s ease;
+  color: white;
+}
+#hidden-span4moved {
+  width: 400px;
+  display: inline-block;
+  font-size: 1em;
+  height: 50px;
+  margin-left: 5px;
+  transform: translateX(-500px);
+  -webkit-transition: all 1s ease;
+  color: white;
+}
+#hidden-span5moved {
+  width: 400px;
+  display: inline-block;
+  font-size: 1em;
+  height: 50px;
+  margin-left: 5px;
+  transform: translateX(-500px);
+  -webkit-transition: all 1s ease;
+  color: white;
+}
+#hidden-span6moved {
+  width: 400px;
+  display: inline-block;
+  font-size: 1em;
+  height: 50px;
+  margin-left: 5px;
+  transform: translateX(-500px);
+  -webkit-transition: all 1s ease;
+  color: white;
+}
+#hidden-span7moved {
+  width: 400px;
+  display: inline-block;
+  font-size: 1em;
+  height: 50px;
+  margin-left: 5px;
+  transform: translateX(-700px);
+  -webkit-transition: all 1s ease;
+  color: white;
+}
+#hidden-span8moved {
+  width: 400px;
+  display: inline-block;
+  font-size: 1em;
+  height: 50px;
+  margin-left: 5px;
+  transform: translateX(-500px);
+  -webkit-transition: all 1s ease;
+  color: white;
+}
+#hidden-span9moved {
+  width: 400px;
+  display: inline-block;
+  font-size: 1em;
+  height: 50px;
+  margin-left: 5px;
+  transform: translateX(-500px);
+  -webkit-transition: all 1s ease;
+  color: white;
+}
+#hidden-span10moved {
+  width: 400px;
+  display: inline-block;
+  font-size: 1em;
+  height: 50px;
+  margin-left: 5px;
+  transform: translateX(-700px);
+  -webkit-transition: all 1s ease;
+  color: white;
+}
+
+/*introduces the syntax that will affect the spanhelpers*/
+#hidden-span1 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span2 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span3 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span4 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span5 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span6 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span7 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span8 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span9 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span10 {
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+    margin-right: 20px;
+}
+#hidden-span1:hover ~ #hidden-span1moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span2:hover ~ #hidden-span2moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span3:hover ~ #hidden-span3moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span4:hover ~ #hidden-span4moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span5:hover ~ #hidden-span5moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span6:hover ~ #hidden-span6moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span7:hover ~ #hidden-span7moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span8:hover ~ #hidden-span8moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span9:hover ~ #hidden-span9moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#hidden-span10:hover ~ #hidden-span10moved {
+  display: inline-block;
+  width: 100px
+  height: 100px;
+  font-size: 1em;
+  background-color: rgba(255, 182, 193, .25);
+  transform: translateX(50px);
+  transition-duration: .5s;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* end of spans and span helpers */
+
+/*end of footer*/
 
 hr {
   width: 90%;
@@ -237,31 +838,150 @@ hr {
   margin-right: auto;
 }
 
-@media screen and (max-width: 804px) {
 
-   .nav-li {
-     color: white;
-     text-decoration: none;
-     margin: 1.5em 1.5em 1.5em 1.5em;
-     padding-bottom: 2px;
-     z-index: 5;
-     list-style: none;
-   }
+/*media queries.  They are generally organized from smallest screen width to largest*/
 
-}
+/*below 780 px*/
 
-@media screen and (min-width: 950px) and (max-width: 1055px) {
-  .photos {
+@media screen and (max-width: 780px) {
+  .align-left > ul {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .align-left > ul > li {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .column {
+    width: 33%;
     float: left;
-    width:  250px;
-    height: 250px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
-    margin-bottom: 2em;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+  }
+/*  .photos {
+    display: none;
     margin-top: 4em;
+    margin-bottom: 2.5em;
+  }*/
+  .row {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  .center {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .center > h1, p {
+    display:block;
+    width: 100%;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .center > h1 {
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .center-whole {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    position: relative;
+    height: 130em;
+  }
+
+  .title2 {
+      display: block;
+      height: 153px;
+      width: 25vw;
+      margin-left: 25vw;
+      margin-right: 50vw;
+      font-size: 3em;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+  }
+
+  h3 {
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    margin-top: 0px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: auto;
+    position: relative;
+    width: 62%;
+    margin-right: auto;
+  }
+  #footer > div > p {
+    letter-spacing: .3em;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5em;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Raleway'), local('Raleway-Regular'),
+         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+    color: white;
+    width: 100%;
+  }
+  .br-spacing {
+
+  }
+
+  .speed {
+    width: 100%;
+    height: 137em;
+    margin-bottom: 50px;
+    padding: 0;
+    position: relative;
+  }
+
+  .center-whole {
+    top: 525px !important;
+  }
+
+  .extra-heigth {
+    height: 200px;
+    width: 100%;
+    display: block;
+  }
+  #footer > div > p {
+    letter-spacing: .3em;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5em;
+    font-size: 1em;
+    color: white;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Raleway'), local('Raleway-Regular'),
+         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+    
   }
 }
+
+/*780 px to 950 px*/
 
 @media screen and (min-width: 780px) and (max-width: 950px) {
   .photos {
@@ -272,7 +992,12 @@ hr {
     background-repeat:   no-repeat;
     background-size:     cover;
     margin-bottom: 2em;
+/*    margin-top: 4em;*/
+  }
+  .photo-crop {
     margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
   }
   #footer > div > p {
     letter-spacing: .3em;
@@ -286,88 +1011,245 @@ hr {
     color: white;
     width: 100%;
   }
+    .title2 {
+      display: block;
+      height: 153px;
+      width: 25vw;
+      margin-left: 25vw;
+      margin-right: 50vw;
+      font-size: 3em;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+  }
 }
 
-@media screen and (max-width: 780px) {
-  .column {
-    width: 80%;
-    position: relative;
-    margin-left: auto;
+/*below 812 px hide the nav-li items except for the hamburger menu*/
+@media screen and (max-width: 812px) {
+
+   .nav-li {
+     color: white;
+     text-decoration: none;
+     margin: 1.0em 1.5em 1.0em 1.5em;
+     padding-bottom: 2px;
+     z-index: 5;
+     list-style: none;
+   }
+
+   nav {
+     max-height: 50px;
+   }
+
+   .second-nav {
+     top: 50px;
+     width: 100%;
+     position: fixed;
+     height: 100%;
+     z-index: -1;
+
+   }
+   .nav-li-hide {
+     color: white;
+     text-decoration: none;
+     margin: 1.0em 1.5em 1.0em 1.5em;
+     padding-bottom: 2px;
+     z-index: 5;
+     list-style: none;
+     display: none
+   }
+     .title2 {
+      display: block;
+      height: 153px;
+      width: 25vw;
+      margin-left: 25vw;
+      margin-right: 50vw;
+      font-size: 3em;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+  }
+
+/*   .lower-ul {
+      padding: 10px;
+      margin-left: auto;
+      position: relative;
+      margin-right: auto;
+   }*/
+
+}
+
+/*950px to 1055 px*/
+
+@media screen and (min-width: 950px) and (max-width: 1055px) {
+  .photos {
+    float: left;
+    width:  250px;
+    height: 250px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin-bottom: 2em;
+/*    margin-top: 4em;*/
+  }
+  .photo-crop {
+    margin-top: 4em;
+    margin-left: auto:
     margin-right: auto;
-    float: none;
+  }
+    .title2 {
+      display: block;
+      height: 153px;
+      width: 25vw;
+      margin-left: 25vw;
+      margin-right: 50vw;
+      font-size: 3em;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+  }
+
+/*  ul .lower-ul {
+    padding: 10px;
+    margin-left: auto;
+    position: relative;
+    margin-right: auto;
+   }*/
+}
+
+@media screen and (max-width: 1054px) {
+    .lower-ul {
+    padding: 10px;
+    margin-left: auto;
+    position: relative;
+    margin-right: auto;
+    width: 100%;
+   }
+     .title2 {
+      display: block;
+      height: 153px;
+      width: 25vw;
+      margin-left: 25vw;
+      margin-right: 50vw;
+      font-size: 3em;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+  }
+}
+ 
+/*at less than 1000px bring the margins down on the .nav-li so they still fit on the same line*/
+@media screen and (max-width: 1000px) {
+
+   .nav-li {
+     color: white;
+     text-decoration: none;
+     margin: 1.5em 1.5em 1.5em 1.5em;
+     padding-bottom: 2px;
+     z-index: 5;
+     list-style: none;
+   }
+     .title2 {
+      display: block;
+      height: 153px;
+      width: 25vw;
+      margin-left: 25vw;
+      margin-right: 50vw;
+      font-size: 3em;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+  }
+
+}
+
+/* above 1055 px */
+
+@media screen and (min-width: 1055px) {
+  .center > h1, p {
+      display: block;
+      width: 71%;
+      margin-bottom: 8px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  hr {
+    width: 71%;
+    margin-left: 0;
+    margin-right: auto;
   }
   .photos {
-    display: none;
-    margin-top: 4em;
-    margin-bottom: 2.5em;
-  }
-  .row {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-  }
-  .center {
-    display: relative;
-    width: 100%;
-  }
-  .center > h1, p {
-    display:block;
-    width: 100%;
-    margin-bottom: 8px;
-  }
-  .center > h1 {
-    margin-top: 4em;
-  }
-  .center-whole {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    top: 100px;
-    position: relative;
-  }
-  h3 {
-    margin-top: 20px;
-  }
-  #footer > div > p {
-    letter-spacing: .3em;
-    text-align: center;
+    float: left;
+    width: 250px;
+    height: 250px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 2em;
+/*    margin-top: 4em;*/
+  }
+  .photo-crop {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    z-index: 100;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    height: 5em;
-    font-size: 1.5em;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    width: 100%;
   }
-  .br-spacing {
-
-  }
-
-}
-
-@media screen and (min-width: 1055px) {
   .center > h1, p {
-      display: block;
-      width: 71%;
-      margin-bottom: 8px;
-  }
-  hr {
-    width: 71%;
-    margin-left: 0;
+    display: block;
+    width: 61%;
+    margin-bottom: 8px;
+    margin-left: auto;
     margin-right: auto;
   }
+  .column {
+    width: 33%;
+    float: left;
+    position: relative;
+    /* margin-left: 48px; */
+    margin-right: auto;
+    margin-left: auto;
+  }
+    .title2 {
+      display: block;
+      height: 153px;
+      width: 25vw;
+      margin-left: 25vw;
+      margin-right: 50vw;
+      font-size: 3em;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+  }
 }
 
-@media screen and (min-width: 1055px) {
-  .center > h1, p {
+@media screen and (min-width: 1630px) {
+    .photos {
+      float: left;
+      width: 325px;
+      height: 325px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 2em;
+/*      margin-top: 4em;*/
+    }
+    .photo-crop {
+      margin-top: 4em;
+      margin-bottom: 2em;
+      width: 325px;
+      height: 325px;
+      overflow: hidden;
+      z-index: 100;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+      .title2 {
       display: block;
-      width: 71%;
-      margin-bottom: 8px;
-  }
-  hr {
-    width: 71%;
-    margin-left: 0;
-    margin-right: auto;
+      height: 153px;
+      width: 25vw;
+      margin-left: 25vw;
+      margin-right: 50vw;
+      font-size: 3em;
+      color: white;
+      font-family: 'Raleway', sans-serif;
   }
 }
