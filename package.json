@@ -27,6 +27,14 @@
   },
   "homepage": "https://github.com/trrapp12-ironyard/wk-01-alpha#readme",
   "devDependencies": {
-    "grunt-contrib-sass": "^1.0.0"
+    "autoprefixer": "^7.2.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.2.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.9.0"
   }
 }
