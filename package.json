@@ -1,0 +1,40 @@
+{
+  "name": "pure-energy-portfolio-project",
+  "version": "1.0.0",
+  "description": "portfolio project for Trevor Rapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trrapp12-ironyard/wk-01-alpha.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "scss",
+    "sass",
+    "javascript",
+    "front-end",
+    "developer",
+    "portfolio"
+  ],
+  "author": "Trevor Rapp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trrapp12-ironyard/wk-01-alpha/issues"
+  },
+  "homepage": "https://github.com/trrapp12-ironyard/wk-01-alpha#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.2.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.9.0"
+  }
+}
