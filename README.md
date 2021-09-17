@@ -14,10 +14,10 @@
 ### This project demonstrates the following:
 ---
 
-- [x] Include imported css.
+- [x] importing css.
 - [x] Incorporating media queries at break points to create a responsive design across desktop, tablet, and mobile platforms.
 
-##### Apply styles based on the following selectors and selector combinations:
+#### Applying styles based on the following selectors and selector combinations:
 ---
 
 - [x] element
@@ -27,7 +27,7 @@
 - [x] distinct nested element and class combination (i.e. if applied to element _or_ class _alone_ then additional nodes would be also be styled;  e.g. `p a`)
 - [x] shared styles (e.g. `p, a`)
 
-##### Add styling including at least one instance for each of these **properties**:
+#### Adding styling including at least one instance for each of these **properties**:
 ---
 
 - [x] width
@@ -44,7 +44,7 @@
 - [x] text-align
 - [x] font-weight
 
-##### Use the following measurements at least once:
+##### Using the following measurements at least once:
 ---
 
 - [x] px
@@ -52,7 +52,7 @@
 - [x] em
 - [x] Modify each of the four different anchor states
 
-##### Make
+##### Content Versioning
 ---
 
 - [x] small and frequent git commits
