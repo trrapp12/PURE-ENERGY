@@ -2,7 +2,7 @@
   "name": "pure-energy-portfolio-project",
   "version": "1.0.0",
   "description": "portfolio project for Trevor Rapp",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js"
