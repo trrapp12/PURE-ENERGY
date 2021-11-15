@@ -151,7 +151,7 @@ p {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b2036', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .sectionThreeTitle {
-  color: white; 
+  color: white;
   font-size: 2.5em;
   text-align: justify;
   margin-top: 0px;
@@ -178,7 +178,7 @@ p {
 }
 
 .sectionThreeTitleUp {
-  color: black; 
+  color: black;
   font-size: 2.5em;
   text-align: justify;
   margin-top: 0px;
@@ -409,7 +409,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     margin-right: auto;
     top: 100px;
     position: relative;
-    height: 130em;
+    height: 115em;
 }
 
 a.example {
@@ -432,7 +432,7 @@ a:link {
 }
 
 .wrapper {
-  overflow: hidden; 
+  overflow: hidden;
   z-index: 200;
 }
 
@@ -708,9 +708,10 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
     color: white;
     margin-right: 20px;
 }
+
 #hidden-span1:hover ~ #hidden-span1moved {
   display: inline-block;
-  width: 100px
+  width: 100px;
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
@@ -722,7 +723,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
 }
 #hidden-span2:hover ~ #hidden-span2moved {
   display: inline-block;
-  width: 100px
+  width: 100px;
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
@@ -734,7 +735,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
 }
 #hidden-span3:hover ~ #hidden-span3moved {
   display: inline-block;
-  width: 100px
+  width: 100px;
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
@@ -746,7 +747,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
 }
 #hidden-span4:hover ~ #hidden-span4moved {
   display: inline-block;
-  width: 100px
+  width: 100px;
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
@@ -758,7 +759,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
 }
 #hidden-span5:hover ~ #hidden-span5moved {
   display: inline-block;
-  width: 100px
+  width: 100px;
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
@@ -770,7 +771,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
 }
 #hidden-span6:hover ~ #hidden-span6moved {
   display: inline-block;
-  width: 100px
+  width: 100px;
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
@@ -782,7 +783,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
 }
 #hidden-span7:hover ~ #hidden-span7moved {
   display: inline-block;
-  width: 100px
+  width: 100px;
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
@@ -794,7 +795,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
 }
 #hidden-span8:hover ~ #hidden-span8moved {
   display: inline-block;
-  width: 100px
+  width: 100px;
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
@@ -806,7 +807,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
 }
 #hidden-span9:hover ~ #hidden-span9moved {
   display: inline-block;
-  width: 100px
+  width: 100px;
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
@@ -818,7 +819,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
 }
 #hidden-span10:hover ~ #hidden-span10moved {
   display: inline-block;
-  width: 100px
+  width: 100px;
   height: 100px;
   font-size: 1em;
   background-color: rgba(255, 182, 193, .25);
@@ -977,7 +978,7 @@ hr {
          url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
          url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
-    
+
   }
 }
 
@@ -1132,7 +1133,7 @@ hr {
       font-family: 'Raleway', sans-serif;
   }
 }
- 
+
 /*at less than 1000px bring the margins down on the .nav-li so they still fit on the same line*/
 @media screen and (max-width: 1000px) {
 
