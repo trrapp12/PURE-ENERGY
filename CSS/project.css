@@ -5,12 +5,14 @@
   padding: 0;
   border: 0;
 }
+
 /*sets html height to 100% so body will fill the entire space*/
 html {
-    height: 100%;
+  height: 100%;
 }
+
 /*element basics */
-body{
+body {
   margin: 0;
   border: 0;
   z-index: -1;
@@ -28,14 +30,14 @@ body{
 }
 
 nav {
-    top: 0;
-    width: 100%;
-    height: 200px;
-    background-color: rgba(96,96,96,.80);
-    background: linear-gradient(rgba(96,96,96,.80), rgba(96,96,96,.01));
-    position: fixed;
-    z-index: 100;
-    mix-blend-mode: difference;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(96, 96, 96, .80);
+  background: linear-gradient(rgba(96, 96, 96, .80), rgba(96, 96, 96, .01));
+  position: fixed;
+  z-index: 100;
+  mix-blend-mode: difference;
 }
 
 ul {
@@ -43,13 +45,19 @@ ul {
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
   margin: 0;
-  src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/raleway-v12-latin-regular.eot');
+  /* IE9 Compat Modes */
   src: local('Raleway'), local('Raleway-Regular'),
-         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+    url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/raleway-v12-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg');
+  /* Legacy iOS */
 }
 
 li {
@@ -59,27 +67,39 @@ li {
   text-decoration: none;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
-  src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/raleway-v12-latin-regular.eot');
+  /* IE9 Compat Modes */
   src: local('Raleway'), local('Raleway-Regular'),
-         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+    url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/raleway-v12-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg');
+  /* Legacy iOS */
 }
 
 h1 {
   font-size: 1.50rem;
   font-family: 'Montserrat', sans-serif;
-  font-weight:lighter;
+  font-weight: lighter;
   color: #CDCDCD;
-  src: url('../fonts/montserrat-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/montserrat-v11-latin-regular.eot');
+  /* IE9 Compat Modes */
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url('../fonts/montserrat-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/montserrat-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/montserrat-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/montserrat-v11-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+    url('../fonts/montserrat-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/montserrat-v11-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/montserrat-v11-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/montserrat-v11-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/montserrat-v11-latin-regular.svg#Montserrat') format('svg');
+  /* Legacy iOS */
 }
 
 h3 {
@@ -91,66 +111,92 @@ h3 {
   width: 62%;
   margin-right: auto;
 }
-h4{
+
+h4 {
   font-family: 'Montserrat', sans-serif;
-  font-weight:bold;
+  font-weight: bold;
   color: #CDCDCD;
-  src: url('../fonts/montserrat-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/montserrat-v11-latin-regular.eot');
+  /* IE9 Compat Modes */
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url('../fonts/montserrat-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/montserrat-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/montserrat-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/montserrat-v11-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+    url('../fonts/montserrat-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/montserrat-v11-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/montserrat-v11-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/montserrat-v11-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/montserrat-v11-latin-regular.svg#Montserrat') format('svg');
+  /* Legacy iOS */
 }
+
 p {
   font-family: 'Raleway', sans-serif;
   font-size: 1.05rem;
   /*width: 900px;*/
   text-align: justify;
   margin-bottom: 50px;
-  src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/raleway-v12-latin-regular.eot');
+  /* IE9 Compat Modes */
   src: local('Raleway'), local('Raleway-Regular'),
-         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+    url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/raleway-v12-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg');
+  /* Legacy iOS */
 }
 
 /*classes*/
 .title-font {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14vw;
-    color: white;
-    padding: 0;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    line-height: 1;
-    text-align: center;
-    display: inline-block;
-    src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local('Raleway'), local('Raleway-Regular'),
-         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14vw;
+  color: white;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  line-height: 1;
+  text-align: center;
+  display: inline-block;
+  src: url('../fonts/raleway-v12-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Regular'),
+    url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/raleway-v12-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg');
+  /* Legacy iOS */
 }
+
 .sectionThreeHeader {
-    height: 50px;
-    width: 100%;
-    padding: 200px;
-    margin-bottom: 406px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b2036+0,7db9e8+100&1+0,0+48 */
-    background: -moz-linear-gradient(45deg, rgba(27,32,54,1) 0%, rgba(74,105,139,0) 48%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(27,32,54,1) 0%,rgba(74,105,139,0) 48%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, rgba(27,32,54,1) 0%,rgba(74,105,139,0) 48%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b2036', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  height: 50px;
+  width: 100%;
+  padding: 200px;
+  margin-bottom: 406px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b2036+0,7db9e8+100&1+0,0+48 */
+  background: -moz-linear-gradient(45deg, rgba(27, 32, 54, 1) 0%, rgba(74, 105, 139, 0) 48%, rgba(125, 185, 232, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(27, 32, 54, 1) 0%, rgba(74, 105, 139, 0) 48%, rgba(125, 185, 232, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(27, 32, 54, 1) 0%, rgba(74, 105, 139, 0) 48%, rgba(125, 185, 232, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b2036', endColorstr='#007db9e8', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }
+
 .sectionThreeTitle {
   color: white;
   font-size: 2.5em;
@@ -163,19 +209,24 @@ p {
   width: 63%;
   left: 20vw;
 }
-.subSectionThreeHeader{
-    height: 250px;
-    opacity: 27;
-    width: 101%;
-    padding: 50px 102px 160px 102px;
-    position: relative;
-    left: -19vw;
-    top: -105px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b2036+0,cccccc+100&0.03+26,1+100 */
-    background: -moz-linear-gradient(left, rgba(27,32,54,0.01) 0%, rgba(73,77,93,0.03) 26%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(27,32,54,0.01) 0%,rgba(73,77,93,0.03) 26%,rgba(204,204,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(27,32,54,0.01) 0%,rgba(73,77,93,0.03) 26%,rgba(204,204,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#081b2036', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 */
+
+.subSectionThreeHeader {
+  height: 250px;
+  opacity: 27;
+  width: 101%;
+  padding: 50px 102px 160px 102px;
+  position: relative;
+  left: -19vw;
+  top: -105px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1b2036+0,cccccc+100&0.03+26,1+100 */
+  background: -moz-linear-gradient(left, rgba(27, 32, 54, 0.01) 0%, rgba(73, 77, 93, 0.03) 26%, rgba(204, 204, 204, 1) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(27, 32, 54, 0.01) 0%, rgba(73, 77, 93, 0.03) 26%, rgba(204, 204, 204, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(27, 32, 54, 0.01) 0%, rgba(73, 77, 93, 0.03) 26%, rgba(204, 204, 204, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#081b2036', endColorstr='#cccccc', GradientType=1);
+  /* IE6-9 */
 }
 
 .sectionThreeTitleUp {
@@ -191,61 +242,70 @@ p {
   left: -8vw;
 
 }
+
 .quote {
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
   color: #CDCDCD;
   font-size: 1.25em;
 }
+
 .quotetop {
-/*    top: 60px;
+  /*    top: 60px;
     position: relative;*/
 }
+
 .mirror {
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
   -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
   -o-transform: matrix(-1, 0, 0, 1, 0, 0);
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-.smallwingquotes{
+
+.smallwingquotes {
   font-size: .5em;
   width: 10px;
 }
+
 .wingquoteleft {
-/*  left: -220px;
+  /*  left: -220px;
   top: 60px;
   position: relative;*/
 }
+
 .wingquoteright {
-/*    left: 162px;
+  /*    left: 162px;
     top: 47px;
     position: relative;*/
 }
-.adjustup{
+
+.adjustup {
   position: relative;
   top: -50px;
 }
+
 .counterclockwise {
-/* Safari */
--webkit-transform: rotate(-90deg);
-/* Firefox */
--moz-transform: rotate(-90deg);
-/* IE */
--ms-transform: rotate(-90deg);
-/* Opera */
--o-transform: rotate(-90deg);
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
+
 .clockwise {
   /* Safari */
--webkit-transform: rotate(90deg);
-/* Firefox */
--moz-transform: rotate(90deg);
-/* IE */
--ms-transform: rotate(90deg);
-/* Opera */
--o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  /* Firefox */
+  -moz-transform: rotate(90deg);
+  /* IE */
+  -ms-transform: rotate(90deg);
+  /* Opera */
+  -o-transform: rotate(90deg);
 }
 
 /*used in function hideCar()*/
@@ -258,28 +318,29 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -transition: opacity 2s linear;
 }
 
-.row{
+.row {
   width: 100%;
   height: auto;
 }
+
 .photos {
-    float: left;
-    width: 436px;
-    height: 436px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 2em;
+  float: left;
+  width: 436px;
+  height: 436px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2em;
 }
 
 .photo-bullet-points {
-    float: none;
-    display: block;
-    margin-bottom: 1vh;
+  float: none;
+  display: block;
+  margin-bottom: 1vh;
 }
 
 .gradient {
-  top:100px;
+  top: 100px;
   width: 100%;
   position: absolute;
   height: 100%;
@@ -293,11 +354,12 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 .speed {
-    width: 100%;
-    height: 137em;
-    margin-bottom: 50px;
-    padding: 0;
-    position: relative;
+  width: 100%;
+  height: 137em;
+  margin-bottom: 50px;
+  padding: 0;
+  position: relative;
+  z-index: 200;
 }
 
 .banner-image {
@@ -307,10 +369,10 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   margin: 0;
   border: 0;
   background-image: url('../images/aventador.jpg');
-  background-attachment:fixed;
-  background-size:cover;
-  background-position:center;
-  position:relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 .hamburger {
@@ -322,17 +384,17 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   transition: .4s;
 }
 
-body > div.center-whole.translate-up.zero-height {
+body>div.center-whole.translate-up.zero-height {
   height: 0px;
 }
 
 /*hamburger menus.  Used in JS function rotateFunction(x) */
 
 .changetop {
-  -webkit-transform: rotate(-45deg) translate(4px, 5px) ;
-    transform: rotate(-45deg) translate(4px, 5px) ;
-    width: 20px;
-  }
+  -webkit-transform: rotate(-45deg) translate(4px, 5px);
+  transform: rotate(-45deg) translate(4px, 5px);
+  width: 20px;
+}
 
 .changemiddle {
   opacity: 0;
@@ -340,28 +402,28 @@ body > div.center-whole.translate-up.zero-height {
 
 .changebottom {
   -webkit-transform: rotate(45deg) translate(-14px, -5px);
-  transform: rotate(45deg) translate (-13px, -7px) ;
+  transform: rotate(45deg) translate (-13px, -7px);
   width: 20px;
 }
 
 /*hamburger menus end*/
 
 .lower-ul {
-    padding: 10px;
-    margin-left: auto;
-    position: relative;
-    width: 62%;
-    margin-right: auto;
+  padding: 10px;
+  margin-left: auto;
+  position: relative;
+  width: 62%;
+  margin-right: auto;
 }
 
 .nav-li {
-    color: white;
-    text-decoration: none;
-    margin: 2.5em 2.5em 2.5em 2.5em;
-    padding-bottom: 2px;
-    z-index: 5;
-    list-style: none;
-  }
+  color: white;
+  text-decoration: none;
+  margin: 2.5em 2.5em 2.5em 2.5em;
+  padding-bottom: 2px;
+  z-index: 5;
+  list-style: none;
+}
 
 .photo-crop {
   width: 350px;
@@ -392,16 +454,17 @@ body > div.center-whole.translate-up.zero-height {
 }
 
 .column {
-    width: 33%;
-    float: left;
-    position: relative;
-    /* margin-left: 48px; */
-    margin-right: auto;
-    margin-left: auto;
+  width: 33%;
+  float: left;
+  position: relative;
+  /* margin-left: 48px; */
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.center > h1, p {
-  display:block;
+.center>h1,
+p {
+  display: block;
   width: 90%;
   margin-bottom: 8px;
   margin-left: auto;
@@ -409,21 +472,21 @@ body > div.center-whole.translate-up.zero-height {
 }
 
 .center-whole {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    top: 100px;
-    position: relative;
-    height: 130em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  position: relative;
+  height: 130em;
 }
 
 a.example {
-    text-decoration: none;
-    color: white;
-    -webkit-transition: color 500ms ease-out 10ms;
-    -moz-transition: color 500ms ease-out 10ms;
-    -o-transition: color 500ms ease-out 10ms;
-    transition: color 500ms ease-out 10ms;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 500ms ease-out 10ms;
+  -moz-transition: color 500ms ease-out 10ms;
+  -o-transition: color 500ms ease-out 10ms;
+  transition: color 500ms ease-out 10ms;
 }
 
 a.example:hover {
@@ -442,10 +505,10 @@ a:link {
 }
 
 .wrapper a:link {
-    color: white;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
 }
 
 .button {
@@ -473,48 +536,53 @@ a:link {
 
 #hideCarID {
   margin-right: auto;
-  margin-left: calc(100% / 2 - 200px)
+}
+
+.car-logo {
+  position: fixed;
+  left: calc(50vw - 200px);
+  z-index: -200;
 }
 
 .sectionTwoRow {
-    position: relative;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    z-index: -100;
-    overflow-y: auto;
-    overflow: visible;
-    -webkit-transform: translate3D(0, 0, 0);
-    -webkit-transform-style: preserve-3d;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  z-index: -100;
+  overflow-y: auto;
+  overflow: visible;
+  -webkit-transform: translate3D(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
 }
 
 #parrallelogram {
-    background-image: url(../images/pexels-photo-251287.png);
-    background-attachment: fixed;
-    background-position-x: 120px;
-    -webkit-background-clip: border-box;
-    background-size: cover;
-    position: relative;
-    transform: translateZ(-2000);
-    width: 65%;
-    height: 120vh;
-    margin-left: 462px;
-    margin-bottom: 700px;
-    margin-top: 50px;
-    left: 345px;
-    top: -585px;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-    -webkit-transform: skew(20deg);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
+  background-image: url(../images/pexels-photo-251287.png);
+  background-attachment: fixed;
+  background-position-x: 120px;
+  -webkit-background-clip: border-box;
+  background-size: cover;
+  position: relative;
+  transform: translateZ(-2000);
+  width: 65%;
+  height: 120vh;
+  margin-left: 462px;
+  margin-bottom: 700px;
+  margin-top: 50px;
+  left: 345px;
+  top: -585px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  -webkit-transform: skew(20deg);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 }
 
 /*footer */
@@ -525,7 +593,7 @@ a:link {
   height: 0px;
 }
 
-#footer > div > p {
+#footer>div>p {
   letter-spacing: .3em;
   text-align: center;
   width: 50%;
@@ -536,14 +604,21 @@ a:link {
   font-size: 1.5em;
   font-family: 'Raleway', sans-serif;
   color: white;
-  src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/raleway-v12-latin-regular.eot');
+  /* IE9 Compat Modes */
   src: local('Raleway'), local('Raleway-Regular'),
-         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+    url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/raleway-v12-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg');
+  /* Legacy iOS */
 }
+
 /*elements in the footer*/
 
 /*in this section of code I define an area with #hidden-span1helper that will be changed later on by the #hidden-span1:hover ~ #hidden-span1helper syntax.
@@ -571,6 +646,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   -webkit-transition: all 1s ease;
   color: white;
 }
+
 #hidden-span3moved {
   width: 400px;
   display: inline-block;
@@ -581,6 +657,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   -webkit-transition: all 1s ease;
   color: white;
 }
+
 #hidden-span4moved {
   width: 400px;
   display: inline-block;
@@ -591,6 +668,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   -webkit-transition: all 1s ease;
   color: white;
 }
+
 #hidden-span5moved {
   width: 400px;
   display: inline-block;
@@ -601,6 +679,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   -webkit-transition: all 1s ease;
   color: white;
 }
+
 #hidden-span6moved {
   width: 400px;
   display: inline-block;
@@ -611,6 +690,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   -webkit-transition: all 1s ease;
   color: white;
 }
+
 #hidden-span7moved {
   width: 400px;
   display: inline-block;
@@ -621,6 +701,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   -webkit-transition: all 1s ease;
   color: white;
 }
+
 #hidden-span8moved {
   width: 400px;
   display: inline-block;
@@ -631,6 +712,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   -webkit-transition: all 1s ease;
   color: white;
 }
+
 #hidden-span9moved {
   width: 400px;
   display: inline-block;
@@ -641,6 +723,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   -webkit-transition: all 1s ease;
   color: white;
 }
+
 #hidden-span10moved {
   width: 400px;
   display: inline-block;
@@ -654,67 +737,76 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
 
 /*introduces the syntax that will affect the spanhelpers*/
 #hidden-span1 {
-    padding: 10px;
-    font-size: 3em;
-    color: white;
-    margin-right: 20px;
-}
-#hidden-span2 {
-    padding: 10px;
-    font-size: 3em;
-    color: white;
-    margin-right: 20px;
-}
-#hidden-span3 {
-    padding: 10px;
-    font-size: 3em;
-    color: white;
-    margin-right: 20px;
-}
-#hidden-span4 {
-    padding: 10px;
-    font-size: 3em;
-    color: white;
-    margin-right: 20px;
-}
-#hidden-span5 {
-    padding: 10px;
-    font-size: 3em;
-    color: white;
-    margin-right: 20px;
-}
-#hidden-span6 {
-    padding: 10px;
-    font-size: 3em;
-    color: white;
-    margin-right: 20px;
-}
-#hidden-span7 {
-    padding: 10px;
-    font-size: 3em;
-    color: white;
-    margin-right: 20px;
-}
-#hidden-span8 {
-    padding: 10px;
-    font-size: 3em;
-    color: white;
-    margin-right: 20px;
-}
-#hidden-span9 {
-    padding: 10px;
-    font-size: 3em;
-    color: white;
-    margin-right: 20px;
-}
-#hidden-span10 {
-    padding: 10px;
-    font-size: 3em;
-    color: white;
-    margin-right: 20px;
+  padding: 10px;
+  font-size: 3em;
+  color: white;
+  margin-right: 20px;
 }
 
-#hidden-span1:hover ~ #hidden-span1moved {
+#hidden-span2 {
+  padding: 10px;
+  font-size: 3em;
+  color: white;
+  margin-right: 20px;
+}
+
+#hidden-span3 {
+  padding: 10px;
+  font-size: 3em;
+  color: white;
+  margin-right: 20px;
+}
+
+#hidden-span4 {
+  padding: 10px;
+  font-size: 3em;
+  color: white;
+  margin-right: 20px;
+}
+
+#hidden-span5 {
+  padding: 10px;
+  font-size: 3em;
+  color: white;
+  margin-right: 20px;
+}
+
+#hidden-span6 {
+  padding: 10px;
+  font-size: 3em;
+  color: white;
+  margin-right: 20px;
+}
+
+#hidden-span7 {
+  padding: 10px;
+  font-size: 3em;
+  color: white;
+  margin-right: 20px;
+}
+
+#hidden-span8 {
+  padding: 10px;
+  font-size: 3em;
+  color: white;
+  margin-right: 20px;
+}
+
+#hidden-span9 {
+  padding: 10px;
+  font-size: 3em;
+  color: white;
+  margin-right: 20px;
+}
+
+#hidden-span10 {
+  padding: 10px;
+  font-size: 3em;
+  color: white;
+  margin-right: 20px;
+}
+
+#hidden-span1:hover~#hidden-span1moved {
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -726,7 +818,8 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   padding-left: 20px;
   padding-right: 20px;
 }
-#hidden-span2:hover ~ #hidden-span2moved {
+
+#hidden-span2:hover~#hidden-span2moved {
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -738,7 +831,8 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   padding-left: 20px;
   padding-right: 20px;
 }
-#hidden-span3:hover ~ #hidden-span3moved {
+
+#hidden-span3:hover~#hidden-span3moved {
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -750,7 +844,8 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   padding-left: 20px;
   padding-right: 20px;
 }
-#hidden-span4:hover ~ #hidden-span4moved {
+
+#hidden-span4:hover~#hidden-span4moved {
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -762,7 +857,8 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   padding-left: 20px;
   padding-right: 20px;
 }
-#hidden-span5:hover ~ #hidden-span5moved {
+
+#hidden-span5:hover~#hidden-span5moved {
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -774,7 +870,8 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   padding-left: 20px;
   padding-right: 20px;
 }
-#hidden-span6:hover ~ #hidden-span6moved {
+
+#hidden-span6:hover~#hidden-span6moved {
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -786,7 +883,8 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   padding-left: 20px;
   padding-right: 20px;
 }
-#hidden-span7:hover ~ #hidden-span7moved {
+
+#hidden-span7:hover~#hidden-span7moved {
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -798,7 +896,8 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   padding-left: 20px;
   padding-right: 20px;
 }
-#hidden-span8:hover ~ #hidden-span8moved {
+
+#hidden-span8:hover~#hidden-span8moved {
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -810,7 +909,8 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   padding-left: 20px;
   padding-right: 20px;
 }
-#hidden-span9:hover ~ #hidden-span9moved {
+
+#hidden-span9:hover~#hidden-span9moved {
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -822,7 +922,8 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   padding-left: 20px;
   padding-right: 20px;
 }
-#hidden-span10:hover ~ #hidden-span10moved {
+
+#hidden-span10:hover~#hidden-span10moved {
   display: inline-block;
   width: 100px;
   height: 100px;
@@ -834,6 +935,7 @@ This syntax uses the hover attribute of the #hidden-span1 to effect the css of t
   padding-left: 20px;
   padding-right: 20px;
 }
+
 /* end of spans and span helpers */
 
 /*end of footer*/
@@ -853,14 +955,16 @@ hr {
 /*below 780 px*/
 
 @media screen and (max-width: 780px) {
-  .align-left > ul {
+  .align-left>ul {
     padding-left: 0;
     margin-left: 0;
   }
-  .align-left > ul > li {
+
+  .align-left>ul>li {
     padding-left: 0;
     margin-left: 0;
   }
+
   .column {
     width: 33%;
     float: left;
@@ -868,7 +972,8 @@ hr {
     margin-right: auto;
     margin-left: auto;
   }
-/*  .photos {
+
+  /*  .photos {
     display: none;
     margin-top: 4em;
     margin-bottom: 2.5em;
@@ -878,6 +983,7 @@ hr {
     width: 100%;
     height: auto;
   }
+
   .center {
     margin: 0;
     padding: 0;
@@ -885,14 +991,17 @@ hr {
     margin-left: auto;
     margin-right: auto;
   }
-  .center > h1, p {
-    display:block;
+
+  .center>h1,
+  p {
+    display: block;
     width: 100%;
     margin-bottom: 8px;
     margin-left: auto;
     margin-right: auto;
   }
-  .center > h1 {
+
+  .center>h1 {
     margin-top: 4em;
     margin-left: auto;
     margin-right: auto;
@@ -908,14 +1017,14 @@ hr {
   }
 
   .title2 {
-      display: block;
-      height: 153px;
-      width: 25vw;
-      margin-left: 25vw;
-      margin-right: 50vw;
-      font-size: 3em;
-      color: white;
-      font-family: 'Raleway', sans-serif;
+    display: block;
+    height: 153px;
+    width: 25vw;
+    margin-left: 25vw;
+    margin-right: 50vw;
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
   }
 
   h3 {
@@ -929,7 +1038,8 @@ hr {
     width: 62%;
     margin-right: auto;
   }
-  #footer > div > p {
+
+  #footer>div>p {
     letter-spacing: .3em;
     text-align: center;
     margin-bottom: 2em;
@@ -938,27 +1048,24 @@ hr {
     height: 5em;
     font-size: 1.5em;
     font-family: 'Raleway', sans-serif;
-    src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/raleway-v12-latin-regular.eot');
+    /* IE9 Compat Modes */
     src: local('Raleway'), local('Raleway-Regular'),
-         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+      url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('../fonts/raleway-v12-latin-regular.woff') format('woff'),
+      /* Modern Browsers */
+      url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg');
+    /* Legacy iOS */
     color: white;
     width: 100%;
   }
-  .br-spacing {
 
-  }
-
-  .speed {
-    width: 100%;
-    height: 137em;
-    margin-bottom: 50px;
-    padding: 0;
-    position: relative;
-  }
+  .br-spacing {}
 
   .center-whole {
     top: 525px !important;
@@ -969,7 +1076,8 @@ hr {
     width: 100%;
     display: block;
   }
-  #footer > div > p {
+
+  #footer>div>p {
     letter-spacing: .3em;
     text-align: center;
     margin-bottom: 2em;
@@ -980,13 +1088,19 @@ hr {
     color: white;
     width: 100%;
     font-family: 'Raleway', sans-serif;
-    src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/raleway-v12-latin-regular.eot');
+    /* IE9 Compat Modes */
     src: local('Raleway'), local('Raleway-Regular'),
-         url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+      url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('../fonts/raleway-v12-latin-regular.woff') format('woff'),
+      /* Modern Browsers */
+      url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg');
+    /* Legacy iOS */
 
   }
 }
@@ -996,20 +1110,22 @@ hr {
 @media screen and (min-width: 780px) and (max-width: 950px) {
   .photos {
     float: left;
-    width:  200px;
+    width: 200px;
     height: 200px;
     background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 2em;
-/*    margin-top: 4em;*/
+    /*    margin-top: 4em;*/
   }
+
   .photo-crop {
     margin-top: 4em;
     margin-left: auto;
     margin-right: auto;
   }
-  #footer > div > p {
+
+  #footer>div>p {
     letter-spacing: .3em;
     text-align: center;
     margin-bottom: 2em;
@@ -1021,63 +1137,66 @@ hr {
     color: white;
     width: 100%;
   }
-    .title2 {
-      display: block;
-      height: 153px;
-      width: 25vw;
-      margin-left: 25vw;
-      margin-right: 50vw;
-      font-size: 3em;
-      color: white;
-      font-family: 'Raleway', sans-serif;
+
+  .title2 {
+    display: block;
+    height: 153px;
+    width: 25vw;
+    margin-left: 25vw;
+    margin-right: 50vw;
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
   }
 }
 
 /*below 812 px hide the nav-li items except for the hamburger menu*/
 @media screen and (max-width: 812px) {
 
-   .nav-li {
-     color: white;
-     text-decoration: none;
-     margin: 1.0em 1.5em 1.0em 1.5em;
-     padding-bottom: 2px;
-     z-index: 5;
-     list-style: none;
-   }
-
-   nav {
-     max-height: 50px;
-   }
-
-   .second-nav {
-     top: 50px;
-     width: 100%;
-     position: fixed;
-     height: 100%;
-     z-index: -1;
-
-   }
-   .nav-li-hide {
-     color: white;
-     text-decoration: none;
-     margin: 1.0em 1.5em 1.0em 1.5em;
-     padding-bottom: 2px;
-     z-index: 5;
-     list-style: none;
-     display: none
-   }
-     .title2 {
-      display: block;
-      height: 153px;
-      width: 25vw;
-      margin-left: 25vw;
-      margin-right: 50vw;
-      font-size: 3em;
-      color: white;
-      font-family: 'Raleway', sans-serif;
+  .nav-li {
+    color: white;
+    text-decoration: none;
+    margin: 1.0em 1.5em 1.0em 1.5em;
+    padding-bottom: 2px;
+    z-index: 5;
+    list-style: none;
   }
 
-/*   .lower-ul {
+  nav {
+    max-height: 50px;
+  }
+
+  .second-nav {
+    top: 50px;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    z-index: -1;
+
+  }
+
+  .nav-li-hide {
+    color: white;
+    text-decoration: none;
+    margin: 1.0em 1.5em 1.0em 1.5em;
+    padding-bottom: 2px;
+    z-index: 5;
+    list-style: none;
+    display: none
+  }
+
+  .title2 {
+    display: block;
+    height: 153px;
+    width: 25vw;
+    margin-left: 25vw;
+    margin-right: 50vw;
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  /*   .lower-ul {
       padding: 10px;
       margin-left: auto;
       position: relative;
@@ -1091,31 +1210,32 @@ hr {
 @media screen and (min-width: 950px) and (max-width: 1055px) {
   .photos {
     float: left;
-    width:  250px;
+    width: 250px;
     height: 250px;
     background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 2em;
-/*    margin-top: 4em;*/
-  }
-  .photo-crop {
-    margin-top: 4em;
-    margin-left: auto:
-    margin-right: auto;
-  }
-    .title2 {
-      display: block;
-      height: 153px;
-      width: 25vw;
-      margin-left: 25vw;
-      margin-right: 50vw;
-      font-size: 3em;
-      color: white;
-      font-family: 'Raleway', sans-serif;
+    /*    margin-top: 4em;*/
   }
 
-/*  ul .lower-ul {
+  .photo-crop {
+    margin-top: 4em;
+    margin-left: auto: margin-right: auto;
+  }
+
+  .title2 {
+    display: block;
+    height: 153px;
+    width: 25vw;
+    margin-left: 25vw;
+    margin-right: 50vw;
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  /*  ul .lower-ul {
     padding: 10px;
     margin-left: auto;
     position: relative;
@@ -1124,45 +1244,47 @@ hr {
 }
 
 @media screen and (max-width: 1054px) {
-    .lower-ul {
+  .lower-ul {
     padding: 10px;
     margin-left: auto;
     position: relative;
     margin-right: auto;
     width: 100%;
-   }
-     .title2 {
-      display: block;
-      height: 153px;
-      width: 25vw;
-      margin-left: 25vw;
-      margin-right: 50vw;
-      font-size: 3em;
-      color: white;
-      font-family: 'Raleway', sans-serif;
+  }
+
+  .title2 {
+    display: block;
+    height: 153px;
+    width: 25vw;
+    margin-left: 25vw;
+    margin-right: 50vw;
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
   }
 }
 
 /*at less than 1000px bring the margins down on the .nav-li so they still fit on the same line*/
 @media screen and (max-width: 1000px) {
 
-   .nav-li {
-     color: white;
-     text-decoration: none;
-     margin: 1.5em 1.5em 1.5em 1.5em;
-     padding-bottom: 2px;
-     z-index: 5;
-     list-style: none;
-   }
-     .title2 {
-      display: block;
-      height: 153px;
-      width: 25vw;
-      margin-left: 25vw;
-      margin-right: 50vw;
-      font-size: 3em;
-      color: white;
-      font-family: 'Raleway', sans-serif;
+  .nav-li {
+    color: white;
+    text-decoration: none;
+    margin: 1.5em 1.5em 1.5em 1.5em;
+    padding-bottom: 2px;
+    z-index: 5;
+    list-style: none;
+  }
+
+  .title2 {
+    display: block;
+    height: 153px;
+    width: 25vw;
+    margin-left: 25vw;
+    margin-right: 50vw;
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
   }
 
 }
@@ -1170,18 +1292,22 @@ hr {
 /* above 1055 px */
 
 @media screen and (min-width: 1055px) {
-  .center > h1, p {
-      display: block;
-      width: 71%;
-      margin-bottom: 8px;
-      margin-left: auto;
-      margin-right: auto;
+
+  .center>h1,
+  p {
+    display: block;
+    width: 71%;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   hr {
     width: 71%;
     margin-left: 0;
     margin-right: auto;
   }
+
   .photos {
     float: left;
     width: 250px;
@@ -1190,8 +1316,9 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 2em;
-/*    margin-top: 4em;*/
+    /*    margin-top: 4em;*/
   }
+
   .photo-crop {
     margin-top: 4em;
     margin-bottom: 2em;
@@ -1203,13 +1330,16 @@ hr {
     margin-left: auto;
     margin-right: auto;
   }
-  .center > h1, p {
+
+  .center>h1,
+  p {
     display: block;
     width: 61%;
     margin-bottom: 8px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .column {
     width: 33%;
     float: left;
@@ -1218,48 +1348,51 @@ hr {
     margin-right: auto;
     margin-left: auto;
   }
-    .title2 {
-      display: block;
-      height: 153px;
-      width: 25vw;
-      margin-left: 25vw;
-      margin-right: 50vw;
-      font-size: 3em;
-      color: white;
-      font-family: 'Raleway', sans-serif;
+
+  .title2 {
+    display: block;
+    height: 153px;
+    width: 25vw;
+    margin-left: 25vw;
+    margin-right: 50vw;
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
   }
 }
 
 @media screen and (min-width: 1630px) {
-    .photos {
-      float: left;
-      width: 325px;
-      height: 325px;
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-bottom: 2em;
-/*      margin-top: 4em;*/
-    }
-    .photo-crop {
-      margin-top: 4em;
-      margin-bottom: 2em;
-      width: 325px;
-      height: 325px;
-      overflow: hidden;
-      z-index: 100;
-      position: relative;
-      margin-left: auto;
-      margin-right: auto;
-    }
-      .title2 {
-      display: block;
-      height: 153px;
-      width: 25vw;
-      margin-left: 25vw;
-      margin-right: 50vw;
-      font-size: 3em;
-      color: white;
-      font-family: 'Raleway', sans-serif;
+  .photos {
+    float: left;
+    width: 325px;
+    height: 325px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2em;
+    /*      margin-top: 4em;*/
+  }
+
+  .photo-crop {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    width: 325px;
+    height: 325px;
+    overflow: hidden;
+    z-index: 100;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title2 {
+    display: block;
+    height: 153px;
+    width: 25vw;
+    margin-left: 25vw;
+    margin-right: 50vw;
+    font-size: 3em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
   }
 }
