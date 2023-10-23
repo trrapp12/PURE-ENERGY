@@ -24,9 +24,13 @@
 
 ### DESCRIPTION:
 
+<br/>
+
 >“If everything seems under control, you're not going fast enough.”
 >
 > -― Mario Andretti
+
+<br/>
 
 *A static webpage geared towards all things fast.*
 
