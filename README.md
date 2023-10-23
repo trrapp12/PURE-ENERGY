@@ -11,8 +11,6 @@
 
 <br>
 
----
-
 ![Pure Energy screen-shot](https://cloud.githubusercontent.com/assets/11747875/20289817/255608aa-aa99-11e6-89d9-95c611e97016.png)
 <br/>
 <br/>
@@ -21,11 +19,30 @@
 <br/>
 ![Pure Energy screen-shot2](https://cloud.githubusercontent.com/assets/11747875/20289843/5fb8e5da-aa99-11e6-9df1-59494825098d.png)
 <br>
-<br>
 
 ---
 
-### This project demonstrates the following:
+### DESCRIPTION:
+
+>“If everything seems under control, you're not going fast enough.”
+>
+> -― Mario Andretti
+
+*A static webpage geared towards all things fast.*
+
+<br/>
+
+---
+
+### QUICKSTART GUIDE
+
+To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/wk-01-alpha/">https://trrapp12.github.io/wk-01-alpha/</a>. 
+
+<br/>
+
+---
+
+### PROJECT DEMONSTRATES THE FOLLOWING
 
 
 - [x] importing css.
@@ -75,20 +92,33 @@
 - [x] Use a background gradiant
 
 <br>
-<br>
 
 ---
 
-### Project published at: 
+### CHALLENGES I OVERCAME
 
-
-[wk-01-alpha](https://trrapp12-ironyard.github.io/wk-01-alpha/)
-<br>
-<br>
+- [X] This was my first coding project, so it was all new to me.
 
 ---
 
-### More Information:
+### MY OWN PERSONAL CONTRIBUTIONS INCLUDED:
 
+- [X] all work is completely my own.  The only directions were user stories the assignment needed to complete.
 
-\**For more information see my [Portfolio] (), [Webpage](http://web-karma.org),[LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), [Blog](http://web-karma.net), or return to my [Github](https://github.com/trrapp12)*
+<br/>
+
+---
+
+### ATTRIBUTIONS: 
+
+Project created by TREVOR RAPP
+
+* Original project idea was part of the <a href="https://scrimba.com/learn/frontend"> Scrimba's Front End Development Course.</a>
+
+<br/>
+
+---
+
+### YOU CAN FIND ME AT:
+
+\**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037) or return to my [Github](https://github.com/trrapp12)*
