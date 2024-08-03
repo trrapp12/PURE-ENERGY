@@ -117,8 +117,6 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 
 Project created by TREVOR RAPP
 
-* Original project idea was part of the <a href="https://scrimba.com/learn/frontend"> Scrimba's Front End Development Course.</a>
-
 <br/>
 
 ---
