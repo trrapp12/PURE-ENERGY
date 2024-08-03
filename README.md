@@ -1,4 +1,4 @@
-# wk-01-alpha (Pure Energy)
+# PURE ENERGY
 
 
 ##### Contributors: Trevor Rapp
