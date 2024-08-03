@@ -40,7 +40,7 @@
 
 ### QUICKSTART GUIDE
 
-To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/wk-01-alpha/">https://trrapp12.github.io/wk-01-alpha/</a>. 
+To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/PURE-ENERGY/">https://trrapp12.github.io/PURE-ENERGY/</a>. 
 
 <br/>
 
